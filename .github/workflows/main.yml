@@ -36,5 +36,20 @@ jobs:
           echo test, and deploy your project.
           
       - name: Gatsby Publish
-        uses: enriikke/gatsby-gh-pages-action@v2.2.0
+        on:
+          push:
+            branches:
+              - dev
+
+        jobs:
+          build:
+            runs-on: ubuntu-latest
+            steps:
+              - uses: actions/checkout@v1
+              - uses: enriikke/gatsby-gh-pages-action@v2
+                with:
+                  access-token: ${{ secrets.ACCESS_TOKEN }}
+                  deploy-branch: gh-pages
+                  gatsby-args: --prefix-paths
+
 
