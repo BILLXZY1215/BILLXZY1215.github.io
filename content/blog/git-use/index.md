@@ -121,7 +121,7 @@ git add README
 
 `git log --pretty="%h - %s" --author='<author_name>'` 显示作者匹配的提交
 
-### **重新\*\*** commit\*\*
+### **重新 commit**
 
 `git commit --amend` 将暂存区文件提交：适用于在上一次 commit 之后，add 了一些新文件，但是还想沿用上一次的 commit 的情况
 
