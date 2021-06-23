@@ -45,7 +45,7 @@ doc/\*\*/\*.pdf
 
 ### **状态简览**
 
-- `git status -s` 获取更为简略的输出
+`git status -s` 获取更为简略的输出
 
 ```
   M README
@@ -55,19 +55,19 @@ doc/\*\*/\*.pdf
  ?? LICENSE.txt
 ```
 
-M：已修改 （Modified）
+- M：已修改 （Modified）
 
-A：已暂存（Staged）
+- A：已暂存（Staged）
 
-??：未跟踪（Untracked）
+- ??：未跟踪（Untracked）
 
-MM：已修改，暂存后再次修改
+- MM：已修改，暂存后再次修改
 
 以 A 为界限，A 上方表示没 add，A 下方表示已经 add，所以 lib/simplegit.rb 文件属于已经 add 的修改，那么就代表它是已经暂存的修改；lib/git.rb 代表新加暂存区的文件；而 README 和 Rakefile 都在 add 上方，表明 README 已修改未暂存，而 Rakefile 有一部分已修改未暂存。
 
 ### **查看修改**
 
-- `git diff` 和 `git diff --staged（git diff --cached）`
+`git diff` 和 `git diff --staged（git diff --cached）`
 
 `git diff` 比较的是 modified（未暂存）和源文件之间的差异
 
@@ -75,29 +75,29 @@ MM：已修改，暂存后再次修改
 
 ### **提交更新**
 
-- `git commit -a -m 'xxx'` 跳过暂存区，不需要 git add, 直接 commit
+`git commit -a -m 'xxx'` 跳过暂存区，不需要 git add, 直接 commit
 
 ### **从暂存区回到工作区**
 
-- `git restore --staged <filename>` 把文件从已暂存状态变为已修改 （回到 `git add` 之前）
+`git restore --staged <filename>` 把文件从已暂存状态变为已修改 （回到 `git add` 之前）
 
-- `git reset HEAD <file>` 同上
+`git reset HEAD <file>` 同上
 
 ### 从工作区回到 unmodified
 
-- `git restore <filename>`;
+`git restore <filename>`
 
-- `git checkout -- <filename>`
+`git checkout -- <filename>`
 
 **删除文件**
 
-- `git rm <filename> -f` 强制删除文件（modified 和 staged file 必须-f 才能删除，这么做是为了防止误删尚未 commit 的数据）
+`git rm <filename> -f` 强制删除文件（modified 和 staged file 必须-f 才能删除，这么做是为了防止误删尚未 commit 的数据）
 
-- `git rm --cached <filename>` 让文件继续保留在磁盘中，但是并不继续追踪 （例如忘记在.gitignore 中添加，并且已经进入了暂存区）
+`git rm --cached <filename>` 让文件继续保留在磁盘中，但是并不继续追踪 （例如忘记在.gitignore 中添加，并且已经进入了暂存区）
 
 **移动文件**
 
-- `git mv <old_filename> <new_filename>` 改名操作
+`git mv <old_filename> <new_filename>` 改名操作
 
 例如 git mv README.md README 相当于这三步操作：
 
@@ -109,7 +109,7 @@ git add README
 
 ### **查看历史**
 
-- `git log --pretty=format:"%h %s" --graph`
+`git log --pretty=format:"%h %s" --graph`
 
 `git log` 常用选项：
 
@@ -119,11 +119,11 @@ git add README
 
 ![](4.png)
 
-- `git log --pretty="%h - %s" --author='<author_name>'` 显示作者匹配的提交
+`git log --pretty="%h - %s" --author='<author_name>'` 显示作者匹配的提交
 
 **重新\*\*** commit\*\*
 
-- `git commit --amend` 将暂存区文件提交：适用于在上一次 commit 之后，add 了一些新文件，但是还想沿用上一次的 commit 的情况
+`git commit --amend` 将暂存区文件提交：适用于在上一次 commit 之后，add 了一些新文件，但是还想沿用上一次的 commit 的情况
 
 ```
 git commit -m 'initial commit'
@@ -133,15 +133,15 @@ git commit --amend
 
 ### **指定远程仓库**
 
-- `git remote add <shortname> <url>`
+`git remote add <shortname> <url>`
 
 ### **Fetch vs Pull**
 
-- `git fetch <shortname>` 访问短称为`<shortname>`的远程仓库，并且抓取当前仓库中没有的内容 （只下载，不合并）
+`git fetch <shortname>` 访问短称为`<shortname>`的远程仓库，并且抓取当前仓库中没有的内容 （只下载，不合并）
 
 ### **切换分支**
 
-- `git checkout -b <branch>`
+`git checkout -b <branch>`
 
 相当于这两步：
 
@@ -150,9 +150,9 @@ git branch <branch>
 git checkout <branch>
 ```
 
-- `git checkout -b <branch> <remote>/<branch>` 相当于 `git checkout --track origin/<branch>` 表明新建一个`<branch>`并且将其关联到`<remote>/<branch>`
+`git checkout -b <branch> <remote>/<branch>` 相当于 `git checkout --track origin/<branch>` 表明新建一个`<branch>`并且将其关联到`<remote>/<branch>`
 
-- `git branch -u 或 --set-upstream-to <remote>/<branch>` 表示将`<remote>/<branch>`关联到当前分支
+`git branch -u 或 --set-upstream-to <remote>/<branch>` 表示将`<remote>/<branch>`关联到当前分支
 
 ### **变基**
 
