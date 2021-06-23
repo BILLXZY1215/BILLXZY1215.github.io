@@ -89,13 +89,13 @@ doc/\*\*/\*.pdf
 
 `git checkout -- <filename>`
 
-**删除文件**
+### **删除文件**
 
 `git rm <filename> -f` 强制删除文件（modified 和 staged file 必须-f 才能删除，这么做是为了防止误删尚未 commit 的数据）
 
 `git rm --cached <filename>` 让文件继续保留在磁盘中，但是并不继续追踪 （例如忘记在.gitignore 中添加，并且已经进入了暂存区）
 
-**移动文件**
+### **移动文件**
 
 `git mv <old_filename> <new_filename>` 改名操作
 
