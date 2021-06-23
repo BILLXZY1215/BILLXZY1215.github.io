@@ -1,9 +1,19 @@
 import * as React from "react";
+import { useState } from "react";
 import { Link, graphql } from "gatsby";
-import { BrowserRouter, Switch, Route, Link as L } from "react-router-dom";
+import { ChakraProvider, Tabs, TabList, Tab } from "@chakra-ui/react";
 import Bio from "../components/bio";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
+
+const About = () => {
+  return (
+    <>
+      <div>About</div>
+      <div>xxx</div>
+    </>
+  );
+};
 
 const BlogIndex = ({ posts }) => {
   if (posts.length === 0) {
@@ -53,22 +63,22 @@ const BlogIndex = ({ posts }) => {
 };
 
 const Index = ({ data, location }) => {
+  const [tab, setTab] = useState(false);
   const siteTitle = data.site.siteMetadata?.title || `Title`;
   const posts = data.allMarkdownRemark.nodes;
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title="All posts" />
       <Bio />
-      <BrowserRouter>
-        <Switch>
-          <Route path="/">
-            <BlogIndex posts={posts} />
-          </Route>
-          <Route path="/about">
-            <div>About</div>
-          </Route>
-        </Switch>
-      </BrowserRouter>
+      <ChakraProvider>
+        <Tabs>
+          <TabList>
+            <Tab onClick={() => setTab(false)}>Posts</Tab>
+            <Tab onClick={() => setTab(true)}>About</Tab>
+          </TabList>
+        </Tabs>
+        {tab ? <About /> : <BlogIndex posts={posts} />}
+      </ChakraProvider>
     </Layout>
   );
 };
