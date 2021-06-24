@@ -122,14 +122,14 @@ const About = () => {
           [<span style={{ color: "blue" }}>Detail</span>]
         </a>
       </Text>
-      <Heading mt={2} size="lg">
+      {/* <Heading mt={2} size="lg">
         Music
       </Heading>
       <Text fontSize="lg">
         For avocation, I enjoy rock music, especially from China mainland: Tang
         Dynasty, Baojiajie 43, ZhiNanZhen, Miserable Faith, Lost Train are my
         favorite bands.
-      </Text>
+      </Text> */}
       {/* <Text fontSize="lg">I'm also the vocal of band Universe 25.</Text> */}
       <Divider mt={2} mb={2} />
       <Heading mb={2}>Contact</Heading>
