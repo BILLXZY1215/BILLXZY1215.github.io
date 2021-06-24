@@ -54,7 +54,12 @@ const About = () => {
     const toast = useToast();
     useEffect(() => {
       if (hasCopied) {
-        toast({ title: "Copied!", status: "success", position: "top" });
+        toast({
+          title: "Copied!",
+          status: "success",
+          position: "top",
+          isClosable: true,
+        });
       }
     }, [hasCopied, toast]);
     return (
