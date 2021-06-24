@@ -19,6 +19,7 @@ import Bio from "../components/bio";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 import { FaLinkedin, FaResearchgate, FaGithub } from "react-icons/fa";
+import { AiOutlineMail } from "react-icons/ai";
 
 const About = () => {
   const info = [
@@ -30,16 +31,22 @@ const About = () => {
       icon: <FaLinkedin />,
     },
     {
+      url: "https://github.com/BILLXZY1215",
+      name: "GitHub",
+      cs: "blackAlpha",
+      icon: <FaGithub />,
+    },
+    {
       url: "https://www.researchgate.net/profile/Zeyu-Xiong-5/research",
       name: "ResearchGate",
       cs: "green",
       icon: <FaResearchgate />,
     },
     {
-      url: "https://github.com/BILLXZY1215",
-      name: "GitHub",
-      cs: "blackAlpha",
-      icon: <FaGithub />,
+      url: "scyzx2@gmail.com",
+      name: "Email",
+      cs: "teal",
+      icon: <AiOutlineMail />,
     },
   ];
   const Item = ({ item }) => {
@@ -101,12 +108,29 @@ const About = () => {
         some projects related to these areas, please let me know. Besides, I'm
         looking for a master project as well.
       </Text>
+      <Heading mt={2} size="md">
+        Publication
+      </Heading>
+      <Text fontSize="lg">
+        1.{" "}
+        <strong>
+          Demystifying Interactions between Driving Behaviors and Styles through
+          Self-Clustering Algorithms.
+        </strong>{" "}
+        2021 February, Y.Zhang, W.Jin, Z.Xiong, Z.Li, Y.Liu, X.Peng{" "}
+        <a href="https://www.researchgate.net/publication/349640595_Demystifying_Interactions_between_Driving_Behaviors_and_Styles_through_Self-Clustering_Algorithms">
+          [<span style={{ color: "blue" }}>Detail</span>]
+        </a>
+      </Text>
       <Heading mt={2} size="lg">
         Music
       </Heading>
       <Text fontSize="lg">
-        For avocation, I enjoy rock music, especially from China mainland.
+        For avocation, I enjoy rock music, especially from China mainland: Tang
+        Dynasty, Baojiajie 43, ZhiNanZhen, Miserable Faith, Lost Train are my
+        favorite bands.
       </Text>
+      {/* <Text fontSize="lg">I'm also the vocal of band Universe 25.</Text> */}
       <Divider mt={2} mb={2} />
       <Heading mb={2}>Contact</Heading>
       <HStack>
