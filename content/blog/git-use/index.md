@@ -102,9 +102,9 @@ doc/\*\*/\*.pdf
 例如 git mv README.md README 相当于这三步操作：
 
 ```
-mv README.md README
-git rm README.md
-git add README
+$ mv README.md README
+$ git rm README.md
+$ git add README
 ```
 
 ### **查看历史**
@@ -126,9 +126,9 @@ git add README
 `git commit --amend` 将暂存区文件提交：适用于在上一次 commit 之后，add 了一些新文件，但是还想沿用上一次的 commit 的情况
 
 ```
-git commit -m 'initial commit'
-git add forgotten_file
-git commit --amend
+$ git commit -m 'initial commit'
+$ git add forgotten_file
+$ git commit --amend
 ```
 
 ### **指定远程仓库**
@@ -146,8 +146,8 @@ git commit --amend
 相当于这两步：
 
 ```
-git branch <branch>
-git checkout <branch>
+$ git branch <branch>
+$ git checkout <branch>
 ```
 
 `git checkout -b <branch> <remote>/<branch>` 相当于 `git checkout --track origin/<branch>` 表明新建一个`<branch>`并且将其关联到`<remote>/<branch>`
