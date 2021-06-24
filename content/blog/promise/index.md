@@ -35,6 +35,8 @@ description: "Promise.all race 和 any 的用法及区别"
   `Promise.any()`适合用在通过不同路径请求同一个资源的需求上。只要有一个路径请求成功就算成功。
   它是一个新出的规范，兼容性没有上面两个强。
 
+---
+
 ## Reference
 
 1. [张鑫旭的个人博客](https://www.zhangxinxu.com/wordpress/2021/05/promise-all-race-any/)
