@@ -16,11 +16,18 @@ import {
   Tooltip,
   useClipboard,
   useToast,
+  Menu,
+  MenuButton,
 } from "@chakra-ui/react";
 import Bio from "../components/bio";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
-import { FaLinkedin, FaResearchgate, FaGithub } from "react-icons/fa";
+import {
+  FaLinkedin,
+  FaResearchgate,
+  FaGithub,
+  FaRssSquare,
+} from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 
 const About = () => {
@@ -49,6 +56,12 @@ const About = () => {
       name: "Email",
       cs: "teal",
       icon: <AiOutlineMail />,
+    },
+    {
+      url: "https://billxzy1215.github.io/feed.xml",
+      name: "RSS Feed",
+      cs: "orange",
+      icon: <FaRssSquare />,
     },
   ];
   const Item = ({ item }) => {
