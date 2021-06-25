@@ -92,15 +92,27 @@ const About = () => {
         Hi, I'm Zeyu. you can call be Bill as well. I'm a final year student
         from Univeristy of Nottigham, Ningbo China🚀, currently, I'm a front-end
         engineer trainee in{" "}
-        <a href="https://taoyoumu.yashihq.com/" style={{ color: "red" }}>
+        <a
+          href="https://taoyoumu.yashihq.com/"
+          target="_blank"
+          style={{ color: "red" }}
+        >
           yashi
         </a>
         ,{" "}
-        <a href="https://ufair.net.cn/" style={{ color: "orange" }}>
+        <a
+          href="https://ufair.net.cn/"
+          target="_blank"
+          style={{ color: "orange" }}
+        >
           uFair
         </a>{" "}
         and a Research fellow in{" "}
-        <a href="https://unnc-ucc.github.io/" style={{ color: "blue" }}>
+        <a
+          href="https://unnc-ucc.github.io/"
+          target="_blank"
+          style={{ color: "blue" }}
+        >
           ucc
         </a>
         . Beside's programming, I enjoy rock music and basketball.
