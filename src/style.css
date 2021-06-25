@@ -253,6 +253,7 @@ a:focus {
 
 .global-header {
   margin-bottom: var(--spacing-12);
+  font-weight: bold;
 }
 
 .main-heading {
@@ -274,6 +275,7 @@ a:focus {
   color: var(--color-primary);
   margin-bottom: var(--spacing-2);
   margin-top: var(--spacing-0);
+  font-weight: bold;
 }
 
 .post-list-item header {

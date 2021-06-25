@@ -6,6 +6,8 @@ import {
   Tabs,
   TabList,
   Tab,
+  TabPanels,
+  TabPanel,
   Text,
   Divider,
   Heading,
@@ -102,6 +104,7 @@ const About = () => {
         <strong>Vue.js</strong>, if you have some awesome projects that need to
         develop or maintain, please let me know.
       </Text>
+      <Divider mt={2} mb={2} />
       <Heading mt={2} size="lg">
         Researcher
       </Heading>
@@ -187,6 +190,7 @@ const BlogIndex = ({ posts }) => {
                 />
               </section>
             </article>
+            <Divider />
           </li>
         );
       })}
@@ -195,7 +199,7 @@ const BlogIndex = ({ posts }) => {
 };
 
 const Index = ({ data, location }) => {
-  const [tab, setTab] = useState(false);
+  const [, setTabIndex] = useState(0);
   const siteTitle = data.site.siteMetadata?.title || `Title`;
   const posts = data.allMarkdownRemark.nodes;
   return (
@@ -203,13 +207,20 @@ const Index = ({ data, location }) => {
       <Seo title="All posts" />
       <Bio />
       <ChakraProvider>
-        <Tabs>
+        <Tabs onChange={(index) => setTabIndex(index)} variant="solid-rounded">
           <TabList>
-            <Tab onClick={() => setTab(false)}>Posts</Tab>
-            <Tab onClick={() => setTab(true)}>About</Tab>
+            <Tab>Posts</Tab>
+            <Tab>About</Tab>
           </TabList>
+          <TabPanels>
+            <TabPanel>
+              <BlogIndex posts={posts} />
+            </TabPanel>
+            <TabPanel>
+              <About />
+            </TabPanel>
+          </TabPanels>
         </Tabs>
-        {tab ? <About /> : <BlogIndex posts={posts} />}
       </ChakraProvider>
     </Layout>
   );
