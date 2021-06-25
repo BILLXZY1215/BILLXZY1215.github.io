@@ -5,7 +5,7 @@ module.exports = {
       name: `Zeyu XIONG`,
       summary: `Final year student at the University of Nottingham Ningbo China, Computer Science with Artificial Intelligence.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `Coding & Life`,
     siteUrl: `https://billxzy1215.github.io/`,
   },
   plugins: [
