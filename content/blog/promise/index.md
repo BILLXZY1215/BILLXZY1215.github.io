@@ -16,9 +16,9 @@ description: "Promise.all race 和 any 的用法及区别"
 假设有三个async任务放进Promise，每个任务成功的概率为50%，那么对于 Promise.all, Promise.race 和 Promise.any 来说，成功的概率分别是多少？
 ```
 
-- `Promise.all()` 50% _ 50% _ 50% = 12.5%
+- `Promise.all()` 50% \* 50% \*50% = 12.5%
 - `Promise.race()` 50%
-- `Promise.any()` 1 - 50% _ 50% _ 50% = 87.5%
+- `Promise.any()` 1 - 50% \* 50% \* 50% = 87.5%
 
 ## 使用场景
 
