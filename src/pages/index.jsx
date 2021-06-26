@@ -16,6 +16,7 @@ import {
   Tooltip,
   useClipboard,
   useToast,
+  Spinner,
 } from "@chakra-ui/react";
 import Bio from "../components/bio";
 import Layout from "../components/layout";
@@ -232,14 +233,15 @@ const Index = ({ data, location }) => {
   const posts = data.allMarkdownRemark.nodes;
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo title="All posts" />
+      <Seo title="寰宇泽" />
       <Bio />
       <ChakraProvider>
         <Tabs onChange={(index) => setTabIndex(index)} variant="solid-rounded">
           <TabList>
             <Tab>All Posts</Tab>
+            <Tab>Vicky</Tab>
             <Tab>Programming</Tab>
-            <Tab>Life</Tab>
+            <Tab>Research</Tab>
             <Tab>About</Tab>
           </TabList>
           <TabPanels>
@@ -247,10 +249,19 @@ const Index = ({ data, location }) => {
               <BlogIndex posts={posts} type={"All"} />
             </TabPanel>
             <TabPanel>
+              <BlogIndex posts={posts} type={"Vicky"} />
+            </TabPanel>
+            <TabPanel>
               <BlogIndex posts={posts} type={"Programming"} />
             </TabPanel>
             <TabPanel>
-              <BlogIndex posts={posts} type={"Life"} />
+              <HStack>
+                <Button
+                  colorScheme="blue"
+                  isLoading
+                  loadingText={"Coming Soon"}
+                />
+              </HStack>
             </TabPanel>
             <TabPanel>
               <About />
