@@ -5,7 +5,7 @@ type: Vicky
 description: "可可爱爱的主唱和吉他手"
 ---
 
-前两天小萝卜做的图，太可爱啦嘻嘻 😁
+前两天小罗宝做的图，太可爱啦嘻嘻 😁
 
 <audio id="audio" controls="" preload="none">
   <source id="mp3" src="./小罗的歌.mp3">
