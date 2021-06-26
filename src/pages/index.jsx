@@ -16,7 +16,6 @@ import {
   Tooltip,
   useClipboard,
   useToast,
-  Spinner,
 } from "@chakra-ui/react";
 import Bio from "../components/bio";
 import Layout from "../components/layout";
@@ -256,11 +255,12 @@ const Index = ({ data, location }) => {
             </TabPanel>
             <TabPanel>
               <HStack>
-                <Button
+                {/* <Button
                   colorScheme="blue"
                   isLoading
                   loadingText={"Coming Soon"}
-                />
+                /> */}
+                <BlogIndex posts={posts} type={"Research"} />
               </HStack>
             </TabPanel>
             <TabPanel>
