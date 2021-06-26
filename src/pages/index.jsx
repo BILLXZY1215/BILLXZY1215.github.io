@@ -239,7 +239,7 @@ const Index = ({ data, location }) => {
         <Tabs onChange={(index) => setTabIndex(index)} variant="solid-rounded">
           <TabList>
             <Tab>All Posts</Tab>
-            <Tab>Vicky</Tab>
+            <Tab>Life</Tab>
             <Tab>Programming</Tab>
             <Tab>Research</Tab>
             <Tab>About</Tab>
@@ -249,7 +249,7 @@ const Index = ({ data, location }) => {
               <BlogIndex posts={posts} type={"All"} />
             </TabPanel>
             <TabPanel>
-              <BlogIndex posts={posts} type={"Vicky"} />
+              <BlogIndex posts={posts} type={"Life"} />
             </TabPanel>
             <TabPanel>
               <BlogIndex posts={posts} type={"Programming"} />

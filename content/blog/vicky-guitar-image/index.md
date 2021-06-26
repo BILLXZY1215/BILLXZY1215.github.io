@@ -1,7 +1,7 @@
 ---
 title: Hey, Vicky!
 date: "2021-06-26"
-type: Vicky
+type: Life
 description: "可可爱爱的主唱和吉他手"
 ---
 
