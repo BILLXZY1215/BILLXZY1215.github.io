@@ -176,7 +176,7 @@ const About = () => {
   );
 };
 
-const BlogIndex = ({ posts }) => {
+const BlogIndex = ({ posts, type }) => {
   if (posts.length === 0) {
     return (
       <p>
@@ -193,31 +193,33 @@ const BlogIndex = ({ posts }) => {
         const title = post.frontmatter.title || post.fields.slug;
         console.log(post.frontmatter);
         return (
-          <li key={post.fields.slug}>
-            <article
-              className="post-list-item"
-              itemScope
-              itemType="http://schema.org/Article"
-            >
-              <header>
-                <h2>
-                  <Link to={post.fields.slug} itemProp="url">
-                    <span itemProp="headline">{title}</span>
-                  </Link>
-                </h2>
-                <small>{post.frontmatter.date}</small>
-              </header>
-              <section>
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: post.frontmatter.description || post.excerpt,
-                  }}
-                  itemProp="description"
-                />
-              </section>
-            </article>
-            <Divider />
-          </li>
+          (type === "All" || post.frontmatter.type === type) && (
+            <li key={post.fields.slug}>
+              <article
+                className="post-list-item"
+                itemScope
+                itemType="http://schema.org/Article"
+              >
+                <header>
+                  <h2>
+                    <Link to={post.fields.slug} itemProp="url">
+                      <span itemProp="headline">{title}</span>
+                    </Link>
+                  </h2>
+                  <small>{post.frontmatter.date}</small>
+                </header>
+                <section>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: post.frontmatter.description || post.excerpt,
+                    }}
+                    itemProp="description"
+                  />
+                </section>
+              </article>
+              <Divider />
+            </li>
+          )
         );
       })}
     </ol>
@@ -235,12 +237,20 @@ const Index = ({ data, location }) => {
       <ChakraProvider>
         <Tabs onChange={(index) => setTabIndex(index)} variant="solid-rounded">
           <TabList>
-            <Tab>Posts</Tab>
+            <Tab>All Posts</Tab>
+            <Tab>Programming</Tab>
+            <Tab>Life</Tab>
             <Tab>About</Tab>
           </TabList>
           <TabPanels>
             <TabPanel>
-              <BlogIndex posts={posts} />
+              <BlogIndex posts={posts} type={"All"} />
+            </TabPanel>
+            <TabPanel>
+              <BlogIndex posts={posts} type={"Programming"} />
+            </TabPanel>
+            <TabPanel>
+              <BlogIndex posts={posts} type={"Life"} />
             </TabPanel>
             <TabPanel>
               <About />

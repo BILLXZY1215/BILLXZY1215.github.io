@@ -1,7 +1,7 @@
 ---
 title: git-use
 date: "2021-06-21"
-type: "Life"
+type: "Programming"
 description: "打算把 git 常用操作和使用 git 时遇到的问题都记录在这里"
 ---
 
