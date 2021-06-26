@@ -16,8 +16,6 @@ import {
   Tooltip,
   useClipboard,
   useToast,
-  Menu,
-  MenuButton,
 } from "@chakra-ui/react";
 import Bio from "../components/bio";
 import Layout from "../components/layout";
@@ -96,6 +94,7 @@ const About = () => {
           href="https://taoyoumu.yashihq.com/"
           target="_blank"
           style={{ color: "red" }}
+          rel="noopener noreferrer"
         >
           yashi
         </a>
@@ -104,6 +103,7 @@ const About = () => {
           href="https://ufair.net.cn/"
           target="_blank"
           style={{ color: "orange" }}
+          rel="noopener noreferrer"
         >
           uFair
         </a>{" "}
@@ -112,6 +112,7 @@ const About = () => {
           href="https://unnc-ucc.github.io/"
           target="_blank"
           style={{ color: "blue" }}
+          rel="noopener noreferrer"
         >
           ucc
         </a>
@@ -190,7 +191,7 @@ const BlogIndex = ({ posts }) => {
     <ol style={{ listStyle: `none` }}>
       {posts.map((post) => {
         const title = post.frontmatter.title || post.fields.slug;
-
+        console.log(post.frontmatter);
         return (
           <li key={post.fields.slug}>
             <article
@@ -270,6 +271,7 @@ export const pageQuery = graphql`
           date(formatString: "MMMM DD, YYYY")
           title
           description
+          type
         }
       }
     }

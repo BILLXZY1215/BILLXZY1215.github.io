@@ -1,6 +1,7 @@
 ---
 title: Promise.all
 date: "2021-06-24"
+type: Programming
 description: "Promise.all race 和 any 的用法及区别"
 ---
 
