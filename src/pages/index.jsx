@@ -64,6 +64,7 @@ const About = () => {
   ];
   const Item = ({ item }) => {
     const { hasCopied, onCopy } = useClipboard(item.url);
+    const [showText, setShowText] = useState(false);
     const toast = useToast();
     useEffect(() => {
       if (hasCopied) {
@@ -78,7 +79,7 @@ const About = () => {
     return (
       <Tooltip label={item.url}>
         <Button leftIcon={item.icon} colorScheme={item.cs} onClick={onCopy}>
-          {window.innerWidth > 675 && item.name}
+          {item.name}
         </Button>
       </Tooltip>
     );
