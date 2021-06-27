@@ -78,7 +78,7 @@ const About = () => {
     return (
       <Tooltip label={item.url}>
         <Button leftIcon={item.icon} colorScheme={item.cs} onClick={onCopy}>
-          {item.name}
+          {window.innerWidth > 675 && item.name}
         </Button>
       </Tooltip>
     );
