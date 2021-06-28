@@ -8,6 +8,7 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
+    "@material-ui/core": "4.11.1",
     "@emotion/react": "11.4.0",
     "@emotion/styled": "11.3.0",
     "framer-motion": "4.1.17",
