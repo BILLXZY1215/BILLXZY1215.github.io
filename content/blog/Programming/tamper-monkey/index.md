@@ -40,6 +40,8 @@ xxx.user.js 文件 头部:
 
 详见 [tampermonkey doc](https://www.tampermonkey.net/documentation.php)
 
+P.S. 哪天有空研究一下用 tamperMonkey 自动填写问卷/抢票，为大一学子造福～
+
 ## Reference
 
 1. [WikiPedia: UserScript](https://en.wikipedia.org/wiki/Userscript)
