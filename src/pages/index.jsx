@@ -2,6 +2,7 @@ import * as React from "react";
 import { useState, useEffect } from "react";
 import { Link, graphql } from "gatsby";
 import {
+  Grid,
   ChakraProvider,
   Tabs,
   TabList,
@@ -64,7 +65,6 @@ const About = () => {
   ];
   const Item = ({ item }) => {
     const { hasCopied, onCopy } = useClipboard(item.url);
-    const [showText, setShowText] = useState(false);
     const toast = useToast();
     useEffect(() => {
       if (hasCopied) {
@@ -168,11 +168,11 @@ const About = () => {
       {/* <Text fontSize="lg">I'm also the vocal of band Universe 25.</Text> */}
       <Divider mt={2} mb={2} />
       <Heading mb={2}>Contact</Heading>
-      <HStack>
+      <Grid templateColumns="repeat(2, 1fr)" gap={6}>
         {info.map((k) => (
           <Item item={k} />
         ))}
-      </HStack>
+      </Grid>
     </ChakraProvider>
   );
 };
