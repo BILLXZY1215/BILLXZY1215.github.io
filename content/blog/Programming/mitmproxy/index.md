@@ -46,6 +46,21 @@ b. 使用 pipx: `pipx install mitmproxy`
 
 这样一来，用户通过网络发送的请求默认都会走 8080 端口，也就是说都能被 mitmproxy 监听到。
 
+### HTTPS 证书设置
+
+当 8080 端口 设置成功后，访问 https 开头的网页会遭到拒绝，这是因为代理不受信任。我们需要给他一个证书：
+
+```
+cat ~/.mitmproxy/mitmproxy-ca-cert.cer
+cp ~/.mitmproxy/mitmproxy-ca-cert.cer ~/Desktop
+```
+
+这样一来新的证书已经在桌面上生成：
+![](19.png)
+添加后还需要设置为 始终信任：
+![](20.png)
+这样一来，就可以访问 https 网页了。
+
 ### 监听请求
 
 例如，我们新开一个终端，在里面通过 8080 端口发送两个 GET 天气预报的请求：
