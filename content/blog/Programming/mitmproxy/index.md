@@ -136,7 +136,7 @@ curl --proxy http://127.0.0.1:8080 "http://wttr.in/Beijing?0"
 
 于是，原本请求得到北京的天气，就返回了湖州天气的结果。
 
-Heavy Rain Shower, 想小罗宝了。希望她一切都好～
+Heavy Rain Shower, 想小罗宝了 qwq
 
 ## Reference
 
