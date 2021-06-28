@@ -59,7 +59,9 @@ cp ~/.mitmproxy/mitmproxy-ca-cert.cer ~/Desktop
 ![](19.png)
 添加后还需要设置为 始终信任：
 ![](20.png)
-这样一来，就可以访问 https 网页了。
+
+![](21.png)
+这样一来，就可以访问 https 网页， 监听 https 请求了。
 
 ### 监听请求
 
