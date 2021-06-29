@@ -63,6 +63,16 @@ cp ~/.mitmproxy/mitmproxy-ca-cert.cer ~/Desktop
 ![](21.png)
 这样一来，就可以访问 https 网页， 监听 https 请求了。
 
+### 链接项目
+
+现在，假设我们的项目在 localhost:3000 中运行，我们希望 mitmproxy 只监听这个项目的 http requst，那么我们可以这么做：
+
+```
+mitmproxy --mode reverse:http://localhost:3000/ -p 8080 --set keep_host_header=true
+```
+
+然后打开 localhost:8080 现在在 localhost:3000 的项目已经被反向绑定，我们现在可以只监听项目中的 http request 了。这也是 mitmproxy 用于开发的核心步骤。此时，可以通过它去拦截/修改/重做项目中的 http 请求了。但需要注意的是，如果此时电脑中的 http 和 https 代理也设置在 8080，将无法访问任何网页（除了 3000 的绑定页）。
+
 ### 监听请求
 
 例如，我们新开一个终端，在里面通过 8080 端口发送两个 GET 天气预报的请求：
