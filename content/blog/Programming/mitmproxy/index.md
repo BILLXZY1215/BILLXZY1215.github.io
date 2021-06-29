@@ -21,6 +21,14 @@ mitmproxy, 全称是 man-in-the-middle proxy:
 
 - Python API: 也叫 mitmdump, `from mitmproxy import http` 可作为模块引入 python 代码，在代码中实现 http 请求
 
+## 为什么要用 mitmproxy
+
+总的来说，是为了保障前后端的分离开发。具体表现有：
+
+1. 后端 API 还未完善，前端为了不影响涉及 http 请求的开发，需要 mock 数据。
+
+2. 前端在测试环境下开发，测试环境中的数据和线上环境有偏差，也可能需要 mock 数据。
+
 ## 安装
 
 MacOS:
