@@ -15,16 +15,18 @@ mitmproxy, 全称是 man-in-the-middle proxy:
 
 目前，mitmproxy 主要可用于三种形式：
 
-- 命令行：也叫 mitmdump，包含 mitmproxy 的所有操作
+- 命令行：包含 mitmproxy 的所有操作
 
 - 用户界面：也叫 mitmweb，界面设计很像 chrome 开发者工具中的 network 界面，但在功能方面是 mitmdump 的阉割版
 
-- Python API: from mitmproxy import http 可作为模块引入 python 代码，在代码中实现 http 请求
+- Python API: 也叫 mitmdump, `from mitmproxy import http` 可作为模块引入 python 代码，在代码中实现 http 请求
 
 ## 安装
 
 MacOS:
+
 a. 使用 Homebrew: `brew install mitmproxy`
+
 b. 使用 pipx: `pipx install mitmproxy`
 
 ## 基本操作（命令行）
