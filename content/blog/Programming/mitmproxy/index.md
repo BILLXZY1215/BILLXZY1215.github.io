@@ -1,6 +1,6 @@
 ---
 title: "mitmproxy: a free and open source interactive HTTPS proxy"
-date: "2021-06-28"
+date: "2021-07-01"
 type: Programming
 description: "mitmproxy初探 基本操作"
 ---
@@ -82,6 +82,32 @@ mitmproxy --mode reverse:http://localhost:3000/ -p 8080 --set keep_host_header=t
 ```
 
 然后打开 localhost:8080 现在在 localhost:3000 的项目已经被反向绑定，我们现在可以只监听项目中的 http request 了。这也是 mitmproxy 用于开发的核心步骤。此时，可以通过它去拦截/修改/重做项目中的 http 请求了。但需要注意的是，如果此时电脑中的 http 和 https 代理也设置在 8080，将无法访问任何网页（除了 3000 的绑定页）。
+
+### Python 脚本嵌入
+
+```
+http-reply-from-proxy.py
+
+GET_Dictionary = {
+  xxx : xxx,
+  xxx : xxx,
+}
+
+def request(flow: http.HTTPFlow) -> None:
+    os_path = os.path.split(os.path.realpath(__file__))[0]
+    baseURL = "http://localhost:8080/<api prefix>"
+    for key in GET_Dictionary:
+        if flow.request.pretty_url == baseURL + key:
+            f = open(os_path + GET_Dictionary[key])
+            data = json.dumps(json.load(f))
+            flow.response = http.HTTPResponse.make(
+                200,
+                data,
+            )
+            f.close()
+```
+
+在开启 mitmproxy 时，带上后缀 -s http-reply-from-proxy.py, 即可使脚本生效。这个脚本的目的是 match 特定的 http 请求，并将它的 response status 改为 200，response body 改为 data。 详见: https://docs.mitmproxy.org/stable/addons-examples/
 
 ### 监听请求
 
