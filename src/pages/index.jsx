@@ -192,7 +192,7 @@ const BlogIndex = ({ posts, type }) => {
     <ol style={{ listStyle: `none` }}>
       {posts.map((post) => {
         const title = post.frontmatter.title || post.fields.slug;
-        console.log(post.frontmatter);
+        // console.log(post.frontmatter);
         return (
           (type === "All" || post.frontmatter.type === type) && (
             <li key={post.fields.slug}>

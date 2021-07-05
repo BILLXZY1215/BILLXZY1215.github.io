@@ -167,9 +167,24 @@ $ git checkout <branch>
 
 事实上，rebase 也可能会有 confilct，所以同样需要手动处理，已决定是到底基于哪个 commit 新建的 commit，它和 merge 最大的区别在于 merge 会新生成一条 merge commit，而 rebase 则不会
 
+```
+Tips: 想要更改某个 commit 的 Author 信息：
+git commit --amend --author="Zeyu Xiong<scyzx2@gmail.com>"
+```
+
 ### **多人合作**
 
 ![](7.png)
+
+### Q&A
+
+1. 运行 `git branch -a` 后，发现 list 出来的 remote 分支删不掉 (运行 `git push origin --delete <远程分支名>`) (unable to delete remote, ref does not exist), 这是为什么？
+
+   - `git branch -a` 中的远程分支，并不一定是真正的远程分支。它实际上是一个本地分支，用来 map 到远程分支。(remote branch, is not the branch in the remote repository)
+
+   - 上述情况的发生，很有可能是没有及时 `git fetch`，导致远程分支已经被删掉了（可能 merge request 的设置是默认 merged 后就自动删除这个远程分支），但本地还残留着和它 map 的分支。
+
+   - 执行 `git fetch --prune`, 就可以自动删掉 map 不到远程仓库的，在本地的 “远程分支”。之后，就可以愉快地删除分支了。
 
 ---
 

@@ -1,8 +1,8 @@
 ---
-title: "React Hooks 实现隔代组件传值"
+title: "React Hooks: useContext + useReducer"
 date: "2021-07-05"
 type: Programming
-description: "useContext + useReducer 搭配用法"
+description: " useContext + useReducer 搭配用法 => 实现隔代组件传值和资源共享"
 ---
 
 ## useContext 基础
