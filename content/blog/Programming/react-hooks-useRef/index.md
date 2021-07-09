@@ -1,6 +1,6 @@
 ---
 title: "React Hooks: useRef"
-date: "2021-07-05"
+date: "2021-07-09"
 type: Programming
 description: " useRef 的基本用法，以及与 useState 的区别"
 ---
@@ -148,3 +148,7 @@ function InputFocus() {
   return <input ref={inputRef} type="text" />;
 }
 ```
+
+## Reference
+
+1. [react-useref-guide](https://dmitripavlutin.com/react-useref-guide/)
