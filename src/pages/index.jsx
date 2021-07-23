@@ -28,6 +28,7 @@ import {
   FaRssSquare,
 } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
+import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 const About = () => {
   const info = [
@@ -153,9 +154,9 @@ const About = () => {
           Self-Clustering Algorithms.
         </strong>{" "}
         2021 February, Y.Zhang, W.Jin, Z.Xiong, Z.Li, Y.Liu, X.Peng{" "}
-        <a href="https://www.researchgate.net/publication/349640595_Demystifying_Interactions_between_Driving_Behaviors_and_Styles_through_Self-Clustering_Algorithms">
+        <OutboundLink href="https://www.researchgate.net/publication/349640595_Demystifying_Interactions_between_Driving_Behaviors_and_Styles_through_Self-Clustering_Algorithms">
           [<span style={{ color: "blue" }}>Detail</span>]
-        </a>
+        </OutboundLink>
       </Text>
       {/* <Heading mt={2} size="lg">
         Music
