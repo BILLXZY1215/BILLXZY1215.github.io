@@ -127,11 +127,23 @@ const About = () => {
         Developer
       </Heading>
       <Text fontSize="lg">
-        Currently, as a developer, I'm mainly focus on{" "}
+        Currently, as a developer, I'm mainly focusing on{" "}
         <strong>front-end</strong> development. I'm learning{" "}
-        <strong>JavaScript</strong>,<strong>React.js</strong> and{" "}
-        <strong>Vue.js</strong>, if you have some awesome projects that need to
-        develop or maintain, please let me know.
+        <strong>JavaScript</strong>, <strong>JQuery</strong>,{" "}
+        <strong>React.js</strong> and <strong>Vue.js</strong>. I'm also paying
+        attention to the novel front-end techniques, such as{" "}
+        <strong>vite.js</strong>.
+        <br />
+        For <strong>back-end</strong>, I focus on <strong>Node.js</strong> and{" "}
+        <strong>FastAPI of Python</strong>.
+        <br />
+        I'm also interested in implementing data structure algorithms by using{" "}
+        <strong>C</strong>, <strong>C++</strong>, <strong>Java</strong>,{" "}
+        <strong>JavaScript</strong>, <strong>Haskell</strong> and{" "}
+        <strong>Python</strong>.
+        <br />
+        If you have some awesome projects that need to develop or maintain,
+        please let me know.
       </Text>
       <Divider mt={2} mb={2} />
       <Heading mt={2} size="lg">
@@ -143,7 +155,7 @@ const About = () => {
         <strong>NLP (Natural Language Processing)</strong>, especially facial
         detection and symbolic music applied in computer science. If you have
         some projects related to these areas, please let me know. Besides, I'm
-        looking for a master project as well.
+        looking for an awesome master project related to those areas as well.
       </Text>
       <Heading mt={2} size="md">
         Publication
@@ -155,7 +167,10 @@ const About = () => {
           Self-Clustering Algorithms.
         </strong>{" "}
         2021 February, Y.Zhang, W.Jin, Z.Xiong, Z.Li, Y.Liu, X.Peng{" "}
-        <OutboundLink href="https://www.researchgate.net/publication/349640595_Demystifying_Interactions_between_Driving_Behaviors_and_Styles_through_Self-Clustering_Algorithms">
+        <OutboundLink
+          target="_blank"
+          href="https://www.researchgate.net/publication/349640595_Demystifying_Interactions_between_Driving_Behaviors_and_Styles_through_Self-Clustering_Algorithms"
+        >
           [<span style={{ color: "blue" }}>Detail</span>]
         </OutboundLink>
       </Text>
