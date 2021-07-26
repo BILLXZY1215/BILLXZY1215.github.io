@@ -228,15 +228,17 @@ const BlogIndex = ({ posts, type }) => {
                       }}
                     >
                       <span itemProp="headline">{title}</span>
-                      <Badge
-                        ml={2}
-                        p={2}
-                        variant="outline"
-                        borderRadius="full"
-                        colorScheme={colorScheme[post.frontmatter.type]}
-                      >
-                        {post.frontmatter.type}
-                      </Badge>
+                      {type === "All" && (
+                        <Badge
+                          ml={2}
+                          p={2}
+                          variant="outline"
+                          borderRadius="full"
+                          colorScheme={colorScheme[post.frontmatter.type]}
+                        >
+                          {post.frontmatter.type}
+                        </Badge>
+                      )}
                     </Link>
                   </h2>
                   <small>{post.frontmatter.date}</small>
