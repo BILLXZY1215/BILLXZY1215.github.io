@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby";
 import {
   Grid,
   ChakraProvider,
+  Badge,
   Tabs,
   TabList,
   Tab,
@@ -204,8 +205,23 @@ const BlogIndex = ({ posts, type }) => {
               >
                 <header>
                   <h2>
-                    <Link to={post.fields.slug} itemProp="url">
+                    <Link
+                      to={post.fields.slug}
+                      itemProp="url"
+                      style={{
+                        color: colorTitle[post.frontmatter.type],
+                      }}
+                    >
                       <span itemProp="headline">{title}</span>
+                      <Badge
+                        ml={2}
+                        p={2}
+                        variant="outline"
+                        borderRadius="full"
+                        colorScheme={colorScheme[post.frontmatter.type]}
+                      >
+                        {post.frontmatter.type}
+                      </Badge>
                     </Link>
                   </h2>
                   <small>{post.frontmatter.date}</small>
@@ -228,6 +244,19 @@ const BlogIndex = ({ posts, type }) => {
   );
 };
 
+const colorScheme = {
+  Life: "orange",
+  Programming: "blue",
+  Research: "green",
+  About: "gray",
+};
+
+const colorTitle = {
+  Life: "#e16029",
+  Programming: "#1377c4",
+  Research: "#179660",
+};
+
 const Index = ({ data, location }) => {
   const [, setTabIndex] = useState(0);
   const siteTitle = data.site.siteMetadata?.title || `Title`;
@@ -240,10 +269,25 @@ const Index = ({ data, location }) => {
         <Tabs onChange={(index) => setTabIndex(index)} variant="solid-rounded">
           <TabList>
             <Tab>All Posts</Tab>
-            <Tab>Life</Tab>
-            <Tab>Programming</Tab>
-            <Tab>Research</Tab>
-            <Tab>About</Tab>
+            <Tab _selected={{ color: "white", bg: `${colorScheme.Life}.500` }}>
+              Life
+            </Tab>
+            <Tab
+              _selected={{
+                color: "white",
+                bg: `${colorScheme.Programming}.500`,
+              }}
+            >
+              Programming
+            </Tab>
+            <Tab
+              _selected={{ color: "white", bg: `${colorScheme.Research}.500` }}
+            >
+              Research
+            </Tab>
+            <Tab _selected={{ color: "white", bg: `${colorScheme.About}.500` }}>
+              About
+            </Tab>
           </TabList>
           <TabPanels>
             <TabPanel>
