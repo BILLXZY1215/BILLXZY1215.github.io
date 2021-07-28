@@ -30,6 +30,7 @@ import {
 } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
+import ViewCounter from "../components/lib/ViewCounter";
 
 const About = () => {
   const info = [
@@ -209,7 +210,7 @@ const BlogIndex = ({ posts, type }) => {
     <ol style={{ listStyle: `none` }}>
       {posts.map((post) => {
         const title = post.frontmatter.title || post.fields.slug;
-        // console.log(post.frontmatter);
+        console.log(post.frontmatter);
         return (
           (type === "All" || post.frontmatter.type === type) && (
             <li key={post.fields.slug}>
@@ -239,6 +240,11 @@ const BlogIndex = ({ posts, type }) => {
                           {post.frontmatter.type}
                         </Badge>
                       )}
+                      <ViewCounter
+                        data={title}
+                        colorScheme={colorTitle[post.frontmatter.type]}
+                        extraText=""
+                      />
                     </Link>
                   </h2>
                   <small>{post.frontmatter.date}</small>
@@ -281,6 +287,7 @@ const Index = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title="寰宇泽" />
+      <ViewCounter data="index" colorScheme="blue" extraText="In Total" />
       <Bio />
       <ChakraProvider>
         <Tabs onChange={(index) => setTabIndex(index)} variant="solid-rounded">

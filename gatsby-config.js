@@ -25,6 +25,22 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-firebase",
+      options: {
+        credentials: {
+          apiKey: "AIzaSyCr1LuvQKhhdPozziw-rfhiI6SebC2jsHg",
+          authDomain: "react-gatsby-views-12917.firebaseapp.com",
+          databaseURL:
+            "https://react-gatsby-views-12917-default-rtdb.asia-southeast1.firebasedatabase.app/",
+          projectId: "react-gatsby-views-12917",
+          storageBucket: "react-gatsby-views-12917.appspot.com",
+          messagingSenderId: "836794461614",
+          appId: "1:836794461614:web:176beab39cd531c70eac3f",
+          // measurementId: "G-T3J96QBZ6P"
+        },
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
