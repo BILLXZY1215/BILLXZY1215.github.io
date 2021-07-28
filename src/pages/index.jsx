@@ -210,7 +210,7 @@ const BlogIndex = ({ posts, type }) => {
     <ol style={{ listStyle: `none` }}>
       {posts.map((post) => {
         const title = post.frontmatter.title || post.fields.slug;
-        console.log(post.frontmatter);
+        // console.log(post);
         return (
           (type === "All" || post.frontmatter.type === type) && (
             <li key={post.fields.slug}>
@@ -241,9 +241,10 @@ const BlogIndex = ({ posts, type }) => {
                         </Badge>
                       )}
                       <ViewCounter
-                        data={title}
+                        path={post.fields.slug}
                         colorScheme={colorTitle[post.frontmatter.type]}
                         extraText=""
+                        badge={false}
                       />
                     </Link>
                   </h2>
@@ -287,7 +288,6 @@ const Index = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title="寰宇泽" />
-      <ViewCounter data="index" colorScheme="blue" extraText="In Total" />
       <Bio />
       <ChakraProvider>
         <Tabs onChange={(index) => setTabIndex(index)} variant="solid-rounded">

@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import firebase from "gatsby-plugin-firebase";
-import { Badge, ChakraProvider } from "@chakra-ui/react";
 
-const incrementViews = async (id) => {
+export const incrementViews = async (id) => {
   const ref = firebase.database().ref(`/views`).child(id);
 
   ref.transaction((currentViews) => {
@@ -10,16 +9,16 @@ const incrementViews = async (id) => {
   });
 };
 
-const ViewCounter = ({ data, colorScheme, extraText }) => {
+const ViewCounter = ({ path, colorScheme, extraText, badge }) => {
   const [viewCount, setViewCount] = useState("");
   const id_pretty = (x) => {
     let res = "";
     for (var i = 0; i < x.length; i++) {
       res += x.charCodeAt(i);
     }
-    return res;
+    return res + "prod"; // unique id for primary key
   };
-  const id = id_pretty(data);
+  const id = id_pretty(path);
 
   useEffect(() => {
     // 1 is displayed for a split second and then the correct count
@@ -27,8 +26,9 @@ const ViewCounter = ({ data, colorScheme, extraText }) => {
     const onViews = (newViews) => {
       setViewCount(newViews.val() === 1 ? 0 : newViews.val());
     };
-
-    incrementViews(id);
+    if (window.location.pathname === path) {
+      incrementViews(id);
+    }
 
     firebase.database().ref(`/views`).child(id).on(`value`, onViews);
 
@@ -37,14 +37,32 @@ const ViewCounter = ({ data, colorScheme, extraText }) => {
         firebase.database().ref(`/views`).child(id).off(`value`, onViews);
       }
     };
-  }, [id]);
+  }, [id, path]);
+
+  const badgeStyle = {
+    border: "1px solid",
+    width: "100%",
+    display: "inline",
+    margin: "0 0 8px 5px",
+    // margin: "2px 0 0 0",
+    padding: "1px 3px 1px 3px",
+    fontSize: "5px",
+    overflow: "auto",
+  };
+
+  const titleStyle = {
+    width: "100%",
+    margin: "2px 0 0 0",
+    fontSize: "5px",
+    overflow: "auto",
+  };
 
   return (
-    <ChakraProvider>
-      <Badge variant="outline" colorScheme={colorScheme} ml={2} mb={2}>
-        {viewCount ? viewCount : `---`} views {extraText}
-      </Badge>
-    </ChakraProvider>
+    // <Badge variant="outline" colorScheme={colorScheme} ml={2}>
+    <div style={badge ? badgeStyle : titleStyle}>
+      {viewCount ? viewCount : `---`} views {extraText}{" "}
+    </div>
+    // </Badge>
   );
 };
 
