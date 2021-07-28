@@ -186,8 +186,18 @@ git commit --amend --author="Zeyu Xiong<scyzx2@gmail.com>"
 
    - 执行 `git fetch --prune`, 就可以自动删掉 map 不到远程仓库的，在本地的 “远程分支”。之后，就可以愉快地删除分支了。
 
+2. git push 报错：
+
+```
+remote: Password authentication is temporarily disabled as part of a brownout. Please use a personal access token instead.
+```
+
+首先需要去 github 上刷一个 secret，然后在 repo 中操作：`git remote set-url origin https://<tour_new_token>@github.com/<git_url>`，现在就可以愉快地 push 了。
+
 ---
 
 ## Reference
 
 1. [Pro-Git Version2](https://git-scm.com/book/zh/v2)
+
+2. [Password authentication is temporarily disabled as part of a brownout](https://exerror.com/password-authentication-is-temporarily-disabled-as-part-of-a-brownout/)
