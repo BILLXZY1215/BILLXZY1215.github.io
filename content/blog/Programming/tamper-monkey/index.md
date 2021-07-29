@@ -3,6 +3,7 @@ title: tamperMonkey
 date: "2021-06-28"
 type: Programming
 description: "tamperMonkey 初探，userScript 网页脚本的研究"
+cover: ""
 ---
 
 ## 什么是 userScript 网页脚本

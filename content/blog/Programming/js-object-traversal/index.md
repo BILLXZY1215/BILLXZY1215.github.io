@@ -3,6 +3,7 @@ title: "Js Object Traversal"
 date: "2021-07-22"
 type: Programming
 description: "Js 对象遍历 碎碎念"
+cover: "https://z3.ax1x.com/2021/07/29/WbRYJH.png"
 ---
 
 先来个例子：（对象定义）

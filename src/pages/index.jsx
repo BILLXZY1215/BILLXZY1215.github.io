@@ -4,7 +4,9 @@ import { Link, graphql } from "gatsby";
 import {
   Grid,
   ChakraProvider,
+  Box,
   Badge,
+  Image,
   Tabs,
   TabList,
   Tab,
@@ -12,7 +14,6 @@ import {
   TabPanel,
   Text,
   Divider,
-  Heading,
   HStack,
   Button,
   Tooltip,
@@ -89,10 +90,12 @@ const About = () => {
   };
   return (
     <ChakraProvider>
-      <Heading mb={2}>Intro</Heading>
+      <Badge variant="solid" fontSize="1.5em" pl={2} pr={2} borderRadius={5}>
+        Intro
+      </Badge>
       <Text fontSize="md">
         Hi, I'm Zeyu. you can call be Bill as well. I'm a final year student
-        from Univeristy of Nottigham, Ningbo China🚀, currently, I'm a front-end
+        from Univeristy of Nottigham, Ningbo China, currently, I'm a front-end
         engineer trainee in{" "}
         <a
           href="https://taoyoumu.yashihq.com/"
@@ -123,10 +126,13 @@ const About = () => {
         . Beside's programming, I enjoy rock music and basketball.
       </Text>
       <Divider mt={2} mb={2} />
-      <Heading mb={2}>Interest</Heading>
-      <Heading mt={2} size="lg">
+      <Badge variant="solid" fontSize="1.5em" pl={2} pr={2} borderRadius={5}>
+        Interest
+      </Badge>
+      <br />
+      <Badge fontSize="1em" pl={2} pr={2} mt={2}>
         Developer
-      </Heading>
+      </Badge>
       <Text fontSize="lg">
         Currently, as a developer, I'm mainly focusing on{" "}
         <strong>front-end</strong> development. I'm learning{" "}
@@ -147,9 +153,9 @@ const About = () => {
         please let me know.
       </Text>
       <Divider mt={2} mb={2} />
-      <Heading mt={2} size="lg">
+      <Badge fontSize="1em" pl={2} pr={2}>
         Researcher
-      </Heading>
+      </Badge>
       <Text fontSize="lg">
         As a Researcher, I'm interested in areas of{" "}
         <strong>CV (Computer Vision)</strong> and{" "}
@@ -158,9 +164,9 @@ const About = () => {
         some projects related to these areas, please let me know. Besides, I'm
         looking for an awesome master project related to those areas as well.
       </Text>
-      <Heading mt={2} size="md">
+      <Badge fontSize="1em" pl={2} pr={2} mt={2}>
         Publication
-      </Heading>
+      </Badge>
       <Text fontSize="lg">
         1.{" "}
         <strong>
@@ -185,7 +191,16 @@ const About = () => {
       </Text> */}
       {/* <Text fontSize="lg">I'm also the vocal of band Universe 25.</Text> */}
       <Divider mt={2} mb={2} />
-      <Heading mb={2}>Contact</Heading>
+      <Badge
+        variant="solid"
+        fontSize="1.5em"
+        mb={2}
+        pl={2}
+        pr={2}
+        borderRadius={5}
+      >
+        Contact
+      </Badge>
       <Grid templateColumns="repeat(2, 1fr)" gap={6}>
         {info.map((k) => (
           <Item item={k} />
@@ -213,52 +228,65 @@ const BlogIndex = ({ posts, type }) => {
         // console.log(post);
         return (
           (type === "All" || post.frontmatter.type === type) && (
-            <li key={post.fields.slug}>
-              <article
-                className="post-list-item"
-                itemScope
-                itemType="http://schema.org/Article"
-              >
-                <header>
-                  <h2>
-                    <Link
-                      to={post.fields.slug}
-                      itemProp="url"
-                      style={{
-                        color: colorTitle[post.frontmatter.type],
-                      }}
-                    >
-                      <span itemProp="headline">{title}</span>
-                      {type === "All" && (
-                        <Badge
-                          ml={2}
-                          p={2}
-                          variant="outline"
-                          borderRadius="full"
-                          colorScheme={colorScheme[post.frontmatter.type]}
+            <li key={title}>
+              <HStack display="flex" position="sticky" justify="space-between">
+                <Box maxW="50vw">
+                  <article
+                    className="post-list-item"
+                    itemScope
+                    itemType="http://schema.org/Article"
+                  >
+                    <header>
+                      <h2>
+                        <Link
+                          to={post.fields.slug}
+                          itemProp="url"
+                          style={{
+                            color: colorTitle[post.frontmatter.type],
+                          }}
                         >
-                          {post.frontmatter.type}
-                        </Badge>
-                      )}
-                      <ViewCounter
-                        path={post.fields.slug}
-                        colorScheme={colorTitle[post.frontmatter.type]}
-                        extraText=""
-                        badge={false}
+                          <span itemProp="headline">{title}</span>{" "}
+                          <Badge
+                            p={1}
+                            variant="solid"
+                            // borderRadius="full"
+                            colorScheme={colorScheme[post.frontmatter.type]}
+                          >
+                            {post.frontmatter.type}
+                          </Badge>
+                          <ViewCounter
+                            path={post.fields.slug}
+                            colorScheme={colorTitle[post.frontmatter.type]}
+                            extraText=""
+                            badge={false}
+                          />
+                        </Link>
+                      </h2>
+                      <small>{post.frontmatter.date}</small>
+                    </header>
+                    <section>
+                      <p
+                        dangerouslySetInnerHTML={{
+                          __html: post.frontmatter.description || post.excerpt,
+                        }}
+                        itemProp="description"
                       />
-                    </Link>
-                  </h2>
-                  <small>{post.frontmatter.date}</small>
-                </header>
-                <section>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: post.frontmatter.description || post.excerpt,
-                    }}
-                    itemProp="description"
+                    </section>
+                  </article>
+                </Box>
+                <Box
+                  maxW="30vw"
+                  maxH="12vh"
+                  borderWidth="1px"
+                  borderRadius="lg"
+                  overflow="hidden"
+                >
+                  <Image
+                    src={post.frontmatter.cover}
+                    fallbackSrc="https://z3.ax1x.com/2021/07/29/Wb2ub8.png"
                   />
-                </section>
-              </article>
+                </Box>
+              </HStack>
               <Divider />
             </li>
           )
@@ -290,10 +318,22 @@ const Index = ({ data, location }) => {
       <Seo title="寰宇泽" />
       <Bio />
       <ChakraProvider>
-        <Tabs onChange={(index) => setTabIndex(index)} variant="solid-rounded">
-          <TabList>
-            <Tab>All Posts</Tab>
-            <Tab _selected={{ color: "white", bg: `${colorScheme.Life}.500` }}>
+        <Tabs
+          isFitted
+          onChange={(index) => setTabIndex(index)}
+          variant="solid-rounded"
+        >
+          <TabList
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+            }}
+          >
+            <Tab id="All Posts">All Posts</Tab>
+            <Tab
+              _selected={{ color: "white", bg: `${colorScheme.Life}.500` }}
+              id="Life"
+            >
               Life
             </Tab>
             <Tab
@@ -301,15 +341,23 @@ const Index = ({ data, location }) => {
                 color: "white",
                 bg: `${colorScheme.Programming}.500`,
               }}
+              id="Programming"
             >
               Programming
             </Tab>
             <Tab
-              _selected={{ color: "white", bg: `${colorScheme.Research}.500` }}
+              _selected={{
+                color: "white",
+                bg: `${colorScheme.Research}.500`,
+              }}
+              id="Research"
             >
               Research
             </Tab>
-            <Tab _selected={{ color: "white", bg: `${colorScheme.About}.500` }}>
+            <Tab
+              _selected={{ color: "white", bg: `${colorScheme.About}.500` }}
+              id="About"
+            >
               About
             </Tab>
           </TabList>
@@ -363,6 +411,7 @@ export const pageQuery = graphql`
           title
           description
           type
+          cover
         }
       }
     }

@@ -3,6 +3,7 @@ title: "React Hooks: useRef"
 date: "2021-07-09"
 type: Programming
 description: " useRef 的基本用法，以及与 useState 的区别"
+cover: "https://z3.ax1x.com/2021/07/29/WbRfO0.png"
 ---
 
 ## 什么是 useRef()

@@ -3,6 +3,7 @@ title: " === vs == "
 date: "2021-07-14"
 type: Programming
 description: "=== 和 == 的区别"
+cover: "https://z3.ax1x.com/2021/07/29/WbRYJH.png"
 ---
 
 话不多说，直接上图。

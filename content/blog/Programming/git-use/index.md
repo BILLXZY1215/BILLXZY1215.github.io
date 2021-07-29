@@ -3,6 +3,7 @@ title: git-use
 date: "2021-06-21"
 type: "Programming"
 description: "打算把 git 常用操作和使用 git 时遇到的问题都记录在这里"
+cover: "https://z3.ax1x.com/2021/07/29/Wb6muT.jpg"
 ---
 
 ## **工作区域**

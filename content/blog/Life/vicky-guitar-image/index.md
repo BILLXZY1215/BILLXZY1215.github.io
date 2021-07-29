@@ -3,6 +3,7 @@ title: Hey, Vicky!
 date: "2021-06-26"
 type: Life
 description: "可可爱爱的主唱和吉他手"
+cover: "https://z3.ax1x.com/2021/07/29/WbBdsg.png"
 ---
 
 前两天小罗宝做的图，太可爱啦嘻嘻 😁

@@ -3,6 +3,7 @@ title: "Const vs Let vs Var"
 date: "2021-07-09"
 type: Programming
 description: " JS 三种定义变量的方式"
+cover: "https://z3.ax1x.com/2021/07/29/WbRYJH.png"
 ---
 
 ## Const

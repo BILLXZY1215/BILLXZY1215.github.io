@@ -3,6 +3,7 @@ title: "React Hooks: useContext + useReducer"
 date: "2021-07-05"
 type: Programming
 description: " useContext + useReducer 搭配用法 => 实现隔代组件传值和资源共享"
+cover: "https://z3.ax1x.com/2021/07/29/WbRfO0.png"
 ---
 
 ## useContext 基础

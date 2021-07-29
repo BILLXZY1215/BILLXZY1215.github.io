@@ -3,6 +3,7 @@ title: Promise.all
 date: "2021-06-24"
 type: Programming
 description: "Promise.all race 和 any 的用法及区别"
+cover: "https://z3.ax1x.com/2021/07/29/WbyZ0e.png"
 ---
 
 ## 概述

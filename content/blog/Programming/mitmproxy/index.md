@@ -3,6 +3,7 @@ title: "mitmproxy: a free and open source interactive HTTPS proxy"
 date: "2021-07-01"
 type: Programming
 description: "mitmproxy 初探 基本操作"
+cover: "https://z3.ax1x.com/2021/07/29/Wb2IGd.png"
 ---
 
 ## 什么是 mitmproxy

@@ -4,6 +4,7 @@ title: "Music Vision: an interactive bio-inspired sonification tool to convert i
 date: "2021-06-27"
 type: Research
 description: "Final Year Project 相关论文：通过图像生成MIDI音乐"
+cover: "https://z3.ax1x.com/2021/07/29/WbcDwF.png"
 ---
 
 ## 概述
