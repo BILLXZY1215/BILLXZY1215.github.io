@@ -2,7 +2,6 @@ import * as React from "react";
 import { useState, useEffect } from "react";
 import { Link, graphql } from "gatsby";
 import {
-  Grid,
   ChakraProvider,
   Box,
   Badge,
@@ -82,7 +81,13 @@ const About = () => {
     }, [hasCopied, toast]);
     return (
       <Tooltip label={item.url}>
-        <Button leftIcon={item.icon} colorScheme={item.cs} onClick={onCopy}>
+        <Button
+          leftIcon={item.icon}
+          colorScheme={item.cs}
+          onClick={onCopy}
+          mb={2}
+          mr={5}
+        >
           {item.name}
         </Button>
       </Tooltip>
@@ -201,11 +206,17 @@ const About = () => {
       >
         Contact
       </Badge>
-      <Grid templateColumns="repeat(2, 1fr)" gap={6}>
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "flex-start",
+        }}
+      >
         {info.map((k) => (
           <Item item={k} />
         ))}
-      </Grid>
+      </div>
     </ChakraProvider>
   );
 };
