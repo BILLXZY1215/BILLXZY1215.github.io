@@ -26,10 +26,19 @@ const ViewCounter = ({ path, colorScheme, extraText, badge }) => {
     const onViews = (newViews) => {
       setViewCount(newViews.val() === 1 ? 0 : newViews.val());
     };
-    if (window.location.pathname === path) {
-      incrementViews(id);
+    if (sessionStorage.getItem("pathStorage") === null) {
+      sessionStorage.setItem("pathStorage", ""); // Initialize
     }
-
+    if (
+      window.location.pathname === path &&
+      sessionStorage.getItem("pathStorage").indexOf(id) === -1
+    ) {
+      incrementViews(id);
+      sessionStorage.setItem(
+        "pathStorage",
+        sessionStorage.getItem("pathStorage") + id
+      );
+    }
     firebase.database().ref(`/views`).child(id).on(`value`, onViews);
 
     return () => {
