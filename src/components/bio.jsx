@@ -48,7 +48,7 @@ const Bio = () => {
           <ViewCounter
             path="/"
             colorScheme="blue"
-            extraText="In Total"
+            extraText="In This Site"
             badge={true}
           />
           <br />

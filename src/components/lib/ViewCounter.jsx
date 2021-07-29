@@ -52,7 +52,7 @@ const ViewCounter = ({ path, colorScheme, extraText, badge }) => {
     border: "1px solid",
     width: "100%",
     display: "inline",
-    margin: "0 0 8px 5px",
+    margin: "0 0 0 8px",
     // margin: "2px 0 0 0",
     padding: "1px 3px 1px 3px",
     fontSize: "5px",
@@ -69,7 +69,7 @@ const ViewCounter = ({ path, colorScheme, extraText, badge }) => {
   return (
     // <Badge variant="outline" colorScheme={colorScheme} ml={2}>
     <div style={badge ? badgeStyle : titleStyle}>
-      {viewCount ? viewCount : `---`} views {extraText}{" "}
+      {viewCount ? viewCount : `---`} Views {extraText}{" "}
     </div>
     // </Badge>
   );
