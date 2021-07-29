@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
+import ViewCounter from "./lib/ViewCounter";
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`;
@@ -31,6 +32,12 @@ const Layout = ({ location, title, children }) => {
         <OutboundLink href="https://www.gatsbyjs.com" style={{ color: "blue" }}>
           Gatsby
         </OutboundLink>
+        <ViewCounter
+          path="/"
+          colorScheme="blue"
+          extraText="In This Site"
+          badge={true}
+        />
       </footer>
     </div>
   );

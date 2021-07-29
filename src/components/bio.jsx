@@ -8,7 +8,7 @@
 import * as React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
-import ViewCounter from "./lib/ViewCounter";
+
 const Bio = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
@@ -45,12 +45,6 @@ const Bio = () => {
       {author?.name && (
         <p>
           Written by <strong>{author.name}</strong>
-          <ViewCounter
-            path="/"
-            colorScheme="blue"
-            extraText="In This Site"
-            badge={true}
-          />
           <br />
           {author?.summary || null}
           {` `}
