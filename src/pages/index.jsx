@@ -224,6 +224,31 @@ const About = () => {
 };
 
 const BlogIndex = ({ posts, type }) => {
+  const [page, setPage] = useState(0);
+  const [postInPage, setPostInPage] = useState([]);
+  const limit = 5;
+  const length = posts.length;
+  const maxPage = Math.floor(length / limit);
+  const [disablePrevious, setDisablePrevious] = useState(page === 0);
+  const [disableNext, setDisableNext] = useState(page === maxPage);
+  console.log("length: ", length, " maxPage: ", maxPage);
+  useEffect(() => {
+    setPostInPage(posts.slice(limit * page, limit * (page + 1)));
+  }, [page, length, posts]);
+  useEffect(() => {
+    setDisablePrevious(page === 0);
+    setDisableNext(page === maxPage);
+  }, [page]);
+  const handlePrevious = () => {
+    if (page !== 0) {
+      setPage((v) => v - 1);
+    }
+  };
+  const handleNext = () => {
+    if (page < maxPage) {
+      setPage((v) => v + 1);
+    }
+  };
   if (posts.length === 0) {
     return (
       <p>
@@ -236,7 +261,7 @@ const BlogIndex = ({ posts, type }) => {
 
   return (
     <ol style={{ listStyle: `none` }}>
-      {posts.map((post) => {
+      {postInPage.map((post) => {
         const title = post.frontmatter.title || post.fields.slug;
         // console.log(post);
         return (
@@ -315,6 +340,26 @@ const BlogIndex = ({ posts, type }) => {
           </li>
         );
       })}
+      <HStack display="flex" p={2} position="sticky" justify="space-between">
+        <Button
+          colorScheme={colorScheme[type]}
+          disabled={disablePrevious}
+          onClick={handlePrevious}
+          pl={10}
+          pr={10}
+        >
+          Prev
+        </Button>
+        <Button
+          colorScheme={colorScheme[type]}
+          disabled={disableNext}
+          onClick={handleNext}
+          pl={10}
+          pr={10}
+        >
+          Next
+        </Button>
+      </HStack>
     </ol>
   );
 };
@@ -324,6 +369,7 @@ const colorScheme = {
   Programming: "blue",
   Research: "green",
   About: "gray",
+  All: "facebook",
 };
 
 const colorTitle = {
@@ -355,7 +401,10 @@ const Index = ({ data, location }) => {
               flexWrap: "wrap",
             }}
           >
-            <Tab id="All" _selected={{ color: "white", bg: `blackAlpha.900` }}>
+            <Tab
+              id="All"
+              _selected={{ color: "white", bg: `${colorScheme.All}.500` }}
+            >
               All
             </Tab>
             <Tab
@@ -391,13 +440,16 @@ const Index = ({ data, location }) => {
           </TabList>
           <TabPanels>
             <TabPanel>
-              <BlogIndex posts={posts} />
+              <BlogIndex posts={posts} type={"All"} />
             </TabPanel>
             <TabPanel>
-              <BlogIndex posts={postFilter(posts, "Life")} />
+              <BlogIndex posts={postFilter(posts, "Life")} type={"Life"} />
             </TabPanel>
             <TabPanel>
-              <BlogIndex posts={postFilter(posts, "Programming")} />
+              <BlogIndex
+                posts={postFilter(posts, "Programming")}
+                type={"Programming"}
+              />
             </TabPanel>
             <TabPanel>
               <HStack>
@@ -406,7 +458,10 @@ const Index = ({ data, location }) => {
                   isLoading
                   loadingText={"Coming Soon"}
                 /> */}
-                <BlogIndex posts={postFilter(posts, "Research")} />
+                <BlogIndex
+                  posts={postFilter(posts, "Research")}
+                  type={"Research"}
+                />
               </HStack>
             </TabPanel>
             <TabPanel>
