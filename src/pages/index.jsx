@@ -31,6 +31,7 @@ import {
 import { AiOutlineMail } from "react-icons/ai";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 import ViewCounter from "../components/lib/ViewCounter";
+import ProgressiveImage from "react-progressive-image";
 
 const About = () => {
   const info = [
@@ -292,10 +293,22 @@ const BlogIndex = ({ posts, type }) => {
                   borderRadius="lg"
                   overflow="hidden"
                 >
-                  <Image
+                  <ProgressiveImage
                     src={post.frontmatter.cover}
-                    fallbackSrc="https://z3.ax1x.com/2021/07/30/WLqoN9.png"
-                  />
+                    // delay={3000}
+                    placeholder="https://z3.ax1x.com/2021/07/30/WLqoN9.png"
+                  >
+                    {(src, loading) => (
+                      <Image
+                        src={src}
+                        // fallbackSrc="https://z3.ax1x.com/2021/07/30/WLqoN9.png"
+                        // onLoad={(e) => {
+                        //   console.log("onLoad: ", e);
+                        // }
+                        style={{ opacity: loading ? 0.5 : 1 }}
+                      />
+                    )}
+                  </ProgressiveImage>
                 </Box>
               </HStack>
               <Divider />
