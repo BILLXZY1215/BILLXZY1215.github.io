@@ -67,7 +67,7 @@ const About = () => {
       icon: <FaRssSquare />,
     },
   ];
-  const Item = ({ item }) => {
+  const Item = ({ item, index }) => {
     const { hasCopied, onCopy } = useClipboard(item.url);
     const toast = useToast();
     useEffect(() => {
@@ -88,6 +88,7 @@ const About = () => {
           onClick={onCopy}
           mb={2}
           mr={5}
+          key={index}
         >
           {item.name}
         </Button>
@@ -214,8 +215,8 @@ const About = () => {
           justifyContent: "flex-start",
         }}
       >
-        {info.map((k) => (
-          <Item item={k} />
+        {info.map((k, index) => (
+          <Item item={k} key={index} />
         ))}
       </div>
     </ChakraProvider>
