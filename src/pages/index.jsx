@@ -231,14 +231,13 @@ const BlogIndex = ({ posts, type }) => {
   const maxPage = Math.floor(length / limit);
   const [disablePrevious, setDisablePrevious] = useState(page === 0);
   const [disableNext, setDisableNext] = useState(page === maxPage);
-  console.log("length: ", length, " maxPage: ", maxPage);
   useEffect(() => {
     setPostInPage(posts.slice(limit * page, limit * (page + 1)));
   }, [page, length, posts]);
   useEffect(() => {
     setDisablePrevious(page === 0);
     setDisableNext(page === maxPage);
-  }, [page]);
+  }, [page, maxPage]);
   const handlePrevious = () => {
     if (page !== 0) {
       setPage((v) => v - 1);
@@ -257,6 +256,9 @@ const BlogIndex = ({ posts, type }) => {
         gatsby-config.js).
       </p>
     );
+  }
+  if (!postInPage) {
+    return <Button colorScheme="blue" isLoading loadingText={"Loading"} />;
   }
 
   return (
