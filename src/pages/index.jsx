@@ -240,81 +240,79 @@ const BlogIndex = ({ posts, type }) => {
         const title = post.frontmatter.title || post.fields.slug;
         // console.log(post);
         return (
-          (type === "All" || post.frontmatter.type === type) && (
-            <li key={title}>
-              <HStack display="flex" position="sticky" justify="space-between">
-                <Box maxW="50vw">
-                  <article
-                    className="post-list-item"
-                    itemScope
-                    itemType="http://schema.org/Article"
-                  >
-                    <header>
-                      <h2>
-                        <Link
-                          to={post.fields.slug}
-                          itemProp="url"
-                          style={{
-                            color: colorTitle[post.frontmatter.type],
-                          }}
-                        >
-                          <span itemProp="headline">{title}</span>{" "}
-                          <Badge
-                            p={1}
-                            variant="solid"
-                            // borderRadius="full"
-                            colorScheme={colorScheme[post.frontmatter.type]}
-                          >
-                            {post.frontmatter.type}
-                          </Badge>
-                          <ViewCounter
-                            path={post.fields.slug}
-                            colorScheme={colorTitle[post.frontmatter.type]}
-                            extraText=""
-                            badge={false}
-                          />
-                        </Link>
-                      </h2>
-                      <small>{post.frontmatter.date}</small>
-                    </header>
-                    <section>
-                      <p
-                        dangerouslySetInnerHTML={{
-                          __html: post.frontmatter.description || post.excerpt,
+          <li key={title}>
+            <HStack display="flex" position="sticky" justify="space-between">
+              <Box maxW="50vw">
+                <article
+                  className="post-list-item"
+                  itemScope
+                  itemType="http://schema.org/Article"
+                >
+                  <header>
+                    <h2>
+                      <Link
+                        to={post.fields.slug}
+                        itemProp="url"
+                        style={{
+                          color: colorTitle[post.frontmatter.type],
                         }}
-                        itemProp="description"
-                      />
-                    </section>
-                  </article>
-                </Box>
-                <Tooltip label={post.frontmatter.description}>
-                  <Box
-                    maxW="30vw"
-                    maxH="12vh"
-                    borderWidth="1px"
-                    borderRadius="lg"
-                    overflow="hidden"
-                  >
-                    <ProgressiveImage
-                      src={post.frontmatter.cover}
-                      // delay={3000}
-                      placeholder="https://z3.ax1x.com/2021/07/30/WLqoN9.png"
-                    >
-                      {(src, loading) => (
-                        <Image
-                          src={src}
-                          // fallbackSrc="https://z3.ax1x.com/2021/07/30/WLqoN9.png"
-                          onLoad={(e) => {}}
-                          style={{ opacity: loading ? 0.5 : 1 }}
+                      >
+                        <span itemProp="headline">{title}</span>{" "}
+                        <Badge
+                          p={1}
+                          variant="solid"
+                          // borderRadius="full"
+                          colorScheme={colorScheme[post.frontmatter.type]}
+                        >
+                          {post.frontmatter.type}
+                        </Badge>
+                        <ViewCounter
+                          path={post.fields.slug}
+                          colorScheme={colorTitle[post.frontmatter.type]}
+                          extraText=""
+                          badge={false}
                         />
-                      )}
-                    </ProgressiveImage>
-                  </Box>
-                </Tooltip>
-              </HStack>
-              <Divider />
-            </li>
-          )
+                      </Link>
+                    </h2>
+                    <small>{post.frontmatter.date}</small>
+                  </header>
+                  <section>
+                    <p
+                      dangerouslySetInnerHTML={{
+                        __html: post.frontmatter.description || post.excerpt,
+                      }}
+                      itemProp="description"
+                    />
+                  </section>
+                </article>
+              </Box>
+              <Tooltip label={post.frontmatter.description}>
+                <Box
+                  maxW="30vw"
+                  maxH="12vh"
+                  borderWidth="1px"
+                  borderRadius="lg"
+                  overflow="hidden"
+                >
+                  <ProgressiveImage
+                    src={post.frontmatter.cover}
+                    // delay={3000}
+                    placeholder="https://z3.ax1x.com/2021/07/30/WLqoN9.png"
+                  >
+                    {(src, loading) => (
+                      <Image
+                        src={src}
+                        // fallbackSrc="https://z3.ax1x.com/2021/07/30/WLqoN9.png"
+                        onLoad={(e) => {}}
+                        style={{ opacity: loading ? 0.5 : 1 }}
+                      />
+                    )}
+                  </ProgressiveImage>
+                </Box>
+              </Tooltip>
+            </HStack>
+            <Divider />
+          </li>
         );
       })}
     </ol>
@@ -338,6 +336,9 @@ const Index = ({ data, location }) => {
   const [, setTabIndex] = useState(0);
   const siteTitle = data.site.siteMetadata?.title || `Title`;
   const posts = data.allMarkdownRemark.nodes;
+  const postFilter = (dataStream, type) => {
+    return dataStream.filter((post) => post.frontmatter.type === type);
+  };
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title="寰宇泽" />
@@ -390,13 +391,13 @@ const Index = ({ data, location }) => {
           </TabList>
           <TabPanels>
             <TabPanel>
-              <BlogIndex posts={posts} type={"All"} />
+              <BlogIndex posts={posts} />
             </TabPanel>
             <TabPanel>
-              <BlogIndex posts={posts} type={"Life"} />
+              <BlogIndex posts={postFilter(posts, "Life")} />
             </TabPanel>
             <TabPanel>
-              <BlogIndex posts={posts} type={"Programming"} />
+              <BlogIndex posts={postFilter(posts, "Programming")} />
             </TabPanel>
             <TabPanel>
               <HStack>
@@ -405,7 +406,7 @@ const Index = ({ data, location }) => {
                   isLoading
                   loadingText={"Coming Soon"}
                 /> */}
-                <BlogIndex posts={posts} type={"Research"} />
+                <BlogIndex posts={postFilter(posts, "Research")} />
               </HStack>
             </TabPanel>
             <TabPanel>
