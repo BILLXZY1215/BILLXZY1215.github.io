@@ -308,14 +308,14 @@ const BlogIndex = ({ posts, type }) => {
 };
 
 const colorScheme = {
-  Life: "orange",
+  Life: "pink",
   Programming: "blue",
   Research: "green",
   About: "gray",
 };
 
 const colorTitle = {
-  Life: "#e16029",
+  Life: "#c54c8a",
   Programming: "#1377c4",
   Research: "#179660",
 };
@@ -340,7 +340,9 @@ const Index = ({ data, location }) => {
               flexWrap: "wrap",
             }}
           >
-            <Tab id="All Posts">All Posts</Tab>
+            <Tab id="All" _selected={{ color: "white", bg: `blackAlpha.900` }}>
+              All
+            </Tab>
             <Tab
               _selected={{ color: "white", bg: `${colorScheme.Life}.500` }}
               id="Life"
