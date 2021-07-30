@@ -294,7 +294,7 @@ const BlogIndex = ({ posts, type }) => {
                 >
                   <Image
                     src={post.frontmatter.cover}
-                    fallbackSrc="https://z3.ax1x.com/2021/07/29/Wb2ub8.png"
+                    fallbackSrc="https://z3.ax1x.com/2021/07/30/WLqoN9.png"
                   />
                 </Box>
               </HStack>
