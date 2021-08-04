@@ -31,6 +31,7 @@ import {
 import { AiOutlineMail } from "react-icons/ai";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 import ViewCounter from "../components/lib/ViewCounter";
+import ThumbCounter from "../components/lib/ThumbCounter";
 import ProgressiveImage from "react-progressive-image";
 
 const About = () => {
@@ -300,6 +301,10 @@ const BlogIndex = ({ posts, type }) => {
                           badge={false}
                         />
                       </Link>
+                      <ThumbCounter
+                        path={post.fields.slug}
+                        colorScheme={colorScheme[post.frontmatter.type]}
+                      />
                     </h2>
                     <small>{post.frontmatter.date}</small>
                   </header>
