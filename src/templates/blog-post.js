@@ -7,7 +7,6 @@ import Layout from "../components/layout";
 import Seo from "../components/seo";
 import ViewCounter from "../components/lib/ViewCounter";
 import ThumbCounter from "../components/lib/ThumbCounter";
-import { ChakraProvider } from "@chakra-ui/react";
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark;

@@ -18,7 +18,7 @@ const ThumbCounter = ({ path, colorScheme }) => {
     for (var i = 0; i < x.length; i++) {
       res += x.charCodeAt(i);
     }
-    return res + "prod" + "thumb"; // unique id for primary key
+    return res + "prodthumb"; // unique id for primary key
   };
   const id = id_pretty(path);
 

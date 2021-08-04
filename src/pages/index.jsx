@@ -29,10 +29,18 @@ import {
   FaRssSquare,
 } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
+import { BiArrowToTop } from "react-icons/bi";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 import ViewCounter from "../components/lib/ViewCounter";
 import ThumbCounter from "../components/lib/ThumbCounter";
 import ProgressiveImage from "react-progressive-image";
+
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
 
 const About = () => {
   const info = [
@@ -385,6 +393,19 @@ const colorTitle = {
   Research: "#179660",
 };
 
+const top = {
+  left: "90%",
+  zIndex: 1,
+  position: "fixed",
+  padding: "1vw",
+  display: "flex",
+  justifyContent: "center",
+  backgroundColor: "black",
+  borderRadius: "60%",
+  color: "white",
+  opacity: 0.5,
+  overflow: "auto",
+};
 const Index = ({ data, location }) => {
   const [, setTabIndex] = useState(0);
   const siteTitle = data.site.siteMetadata?.title || `Title`;
@@ -394,6 +415,9 @@ const Index = ({ data, location }) => {
   };
   return (
     <Layout location={location} title={siteTitle}>
+      <div onClick={scrollToTop} style={top}>
+        <BiArrowToTop />
+      </div>
       <Seo title="寰宇泽" />
       <Bio />
       <ChakraProvider>
