@@ -13,6 +13,7 @@ export const incrementViews = async (id) => {
 
 const ThumbCounter = ({ path, colorScheme }) => {
   const [viewCount, setViewCount] = useState("");
+  const [isNotClicked, setIsNotClicked] = useState(true);
   const id_pretty = (x) => {
     let res = "";
     for (var i = 0; i < x.length; i++) {
@@ -21,6 +22,13 @@ const ThumbCounter = ({ path, colorScheme }) => {
     return res + "prodthumb"; // unique id for primary key
   };
   const id = id_pretty(path);
+
+  useEffect(() => {
+    setIsNotClicked(
+      !sessionStorage.getItem("path-thumb-Storage") ||
+        sessionStorage.getItem("path-thumb-Storage").indexOf(id) === -1
+    );
+  }, [id]);
 
   useEffect(() => {
     // 1 is displayed for a split second and then the correct count
@@ -47,20 +55,17 @@ const ThumbCounter = ({ path, colorScheme }) => {
         "path-thumb-Storage",
         sessionStorage.getItem("path-thumb-Storage") + id
       );
+      setIsNotClicked(false);
     }
   };
+
   return (
     <Button
       onClick={handleClick}
       leftIcon={<FiThumbsUp />}
       colorScheme={colorScheme}
       size="xs"
-      variant={
-        !sessionStorage.getItem("path-thumb-Storage") ||
-        sessionStorage.getItem("path-thumb-Storage").indexOf(id) === -1
-          ? "outline"
-          : "solid"
-      }
+      variant={isNotClicked ? "outline" : "solid"}
     >
       {viewCount ? viewCount : "---"}
     </Button>

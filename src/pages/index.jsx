@@ -241,8 +241,12 @@ const BlogIndex = ({ posts, type }) => {
   const [disablePrevious, setDisablePrevious] = useState(page === 0);
   const [disableNext, setDisableNext] = useState(page === maxPage);
   useEffect(() => {
-    setPostInPage(posts.slice(limit * page, limit * (page + 1)));
-  }, [page, length, posts]);
+    if (type === "All") {
+      setPostInPage(posts);
+    } else {
+      setPostInPage(posts.slice(limit * page, limit * (page + 1)));
+    }
+  }, [page, length, posts, type]);
   useEffect(() => {
     setDisablePrevious(page === 0);
     setDisableNext(page === maxPage);
@@ -355,26 +359,28 @@ const BlogIndex = ({ posts, type }) => {
           </li>
         );
       })}
-      <HStack display="flex" p={2} position="sticky" justify="space-between">
-        <Button
-          colorScheme={colorScheme[type]}
-          disabled={disablePrevious}
-          onClick={handlePrevious}
-          pl={10}
-          pr={10}
-        >
-          Prev
-        </Button>
-        <Button
-          colorScheme={colorScheme[type]}
-          disabled={disableNext}
-          onClick={handleNext}
-          pl={10}
-          pr={10}
-        >
-          Next
-        </Button>
-      </HStack>
+      {type !== "All" && (
+        <HStack display="flex" p={2} position="sticky" justify="space-between">
+          <Button
+            colorScheme={colorScheme[type]}
+            disabled={disablePrevious}
+            onClick={handlePrevious}
+            pl={10}
+            pr={10}
+          >
+            Prev
+          </Button>
+          <Button
+            colorScheme={colorScheme[type]}
+            disabled={disableNext}
+            onClick={handleNext}
+            pl={10}
+            pr={10}
+          >
+            Next
+          </Button>
+        </HStack>
+      )}
     </ol>
   );
 };
