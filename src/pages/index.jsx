@@ -184,15 +184,16 @@ const About = () => {
         Publication
       </Badge>
       <Text fontSize="lg">
-        1.{" "}
+        1. Zhang Y., Jin W., Xiong Z., Li Z., Liu Y., Peng X. (2021)
         <strong>
-          Demystifying Interactions between Driving Behaviors and Styles through
-          Self-Clustering Algorithms.
+          Demystifying Interactions Between Driving Behaviors and Styles Through
+          Self-clustering Algorithms.
         </strong>{" "}
-        2021 February, Y.Zhang, W.Jin, Z.Xiong, Z.Li, Y.Liu, X.Peng{" "}
+        In: Krömker H. (eds) HCI in Mobility, Transport, and Automotive Systems.
+        HCII 2021. Lecture Notes in Computer Science, vol 12791. Springer, Cham.
         <OutboundLink
           target="_blank"
-          href="https://www.researchgate.net/publication/349640595_Demystifying_Interactions_between_Driving_Behaviors_and_Styles_through_Self-Clustering_Algorithms"
+          href="https://doi.org/10.1007/978-3-030-78358-7_23"
         >
           [<span style={{ color: "blue" }}>Detail</span>]
         </OutboundLink>
