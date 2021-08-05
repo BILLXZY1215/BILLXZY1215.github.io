@@ -3,7 +3,7 @@ title: "MusicVAE: Creating a palette for musical scores with Machine Learning"
 date: "2021-08-05"
 type: Research
 description: "Final Year Project 相关论文：Google AI 团队 音色合成工具"
-cover: "https://z3.ax1x.com/2021/07/29/WbcDwF.png"
+cover: "https://z3.ax1x.com/2021/08/05/fenSfg.png"
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/G5JT16flZwM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
