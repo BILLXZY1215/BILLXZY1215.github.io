@@ -173,6 +173,13 @@ Tips: 想要更改某个 commit 的 Author 信息：
 git commit --amend --author="Zeyu Xiong<scyzx2@gmail.com>"
 ```
 
+```
+Tips: 想要从别的分支拿一个 commit 覆盖到当前分支：
+git log 拿到想要拿的分支的 ID
+git checkout <当前分支>
+git cherry-pick <ID>
+```
+
 ### **多人合作**
 
 ![](7.png)
