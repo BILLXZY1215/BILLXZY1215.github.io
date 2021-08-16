@@ -80,7 +80,7 @@ cover: "https://z3.ax1x.com/2021/08/06/fnP9ZF.jpg"
 
 于是， mentor 决定让我 “回炉重造” 一番：重新读一遍 git scm book；学会写正确的 commit，和简洁的代码；学会构建一个 github 个人主页并熟悉 action 和 CI；学会阅读 RSS feed 中的博客内容；学会发 MR 的 checklist，review 别人的代码；一些优秀的库，例如 chakra-UI, react-hooks-form, react-query 等等。在这个过程中，我才逐渐开始明白一个优秀的程序员，真的都是靠着十年如一日的自学，而且是有方法、有目标的自学。这些宝贵的价值，让我相信写代码这件事，一定可以通过努力来实现，无论你有没有基础，是哪个专业的。只要正确地坚持，它一定可以成为你的一技之长。
 
-![](inoreader.png)
+![](ino.png)
 
 ### 事故
 
