@@ -202,6 +202,19 @@ remote: Password authentication is temporarily disabled as part of a brownout. P
 
 首先需要去 github 上刷一个 secret，然后在 repo 中操作：`git remote set-url origin https://<tour_new_token>@github.com/<git_url>`，现在就可以愉快地 push 了。
 
+3. git rename：
+
+正常情况 （文件或文件夹均适用）：`git mv <old_name> <new_name>`
+
+改大小写（需要借助 temp）：
+
+```
+git mv <old_name> temp
+
+git mv temp <new_name>
+
+```
+
 ---
 
 ## Reference
@@ -209,3 +222,5 @@ remote: Password authentication is temporarily disabled as part of a brownout. P
 1. [Pro-Git Version2](https://git-scm.com/book/zh/v2)
 
 2. [Password authentication is temporarily disabled as part of a brownout](https://exerror.com/password-authentication-is-temporarily-disabled-as-part-of-a-brownout/)
+
+3. [Stack Overflow: In a Git repository, how to properly rename a directory?](https://stackoverflow.com/questions/11183788/in-a-git-repository-how-to-properly-rename-a-directory)
