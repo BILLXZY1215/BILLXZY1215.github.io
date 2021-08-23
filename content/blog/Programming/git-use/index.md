@@ -2,7 +2,7 @@
 title: git-use
 date: "2021-06-21"
 type: "Programming"
-description: "打算把 git 常用操作和使用 git 时遇到的问题都记录在这里"
+description: "git 常用操作 持续更新"
 cover: "https://z3.ax1x.com/2021/07/29/Wb6muT.jpg"
 ---
 
@@ -215,6 +215,12 @@ git mv temp <new_name>
 
 ```
 
+4. 查找 commit
+
+```
+git log --all --grep='<key>'
+```
+
 ---
 
 ## Reference
@@ -224,3 +230,5 @@ git mv temp <new_name>
 2. [Password authentication is temporarily disabled as part of a brownout](https://exerror.com/password-authentication-is-temporarily-disabled-as-part-of-a-brownout/)
 
 3. [Stack Overflow: In a Git repository, how to properly rename a directory?](https://stackoverflow.com/questions/11183788/in-a-git-repository-how-to-properly-rename-a-directory)
+
+4. [Stack Overflow: How to search a Git repository by commit message?](https://stackoverflow.com/questions/7124914/how-to-search-a-git-repository-by-commit-message)
