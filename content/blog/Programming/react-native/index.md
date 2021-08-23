@@ -50,6 +50,10 @@ Coming Soon... 或许新开一篇来讲，这篇就基础介绍好了 🤔
 
 以后有空可能再研究研究 Flutter，我看目前 Flutter 的生态要比 RN 略胜一筹。希望能拿一个项目来练练手，比较一下两者的区别。
 
+## Expo
+
+最近发现的...基于 RN 的项目 builder 和 sdk 集成环境。超级好用，有空补一补这个内容。
+
 ## 附 比较好用的 RN 库：
 
 1. UI： [React Native Element](https://reactnativeelements.com/docs/)
