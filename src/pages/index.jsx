@@ -238,7 +238,8 @@ const BlogIndex = ({ posts, type }) => {
   const [postInPage, setPostInPage] = useState([]);
   const limit = 5;
   const length = posts.length;
-  const maxPage = Math.floor(length / limit);
+  const maxPage =
+    length % limit === 0 ? length / limit - 1 : Math.floor(length / limit);
   const [disablePrevious, setDisablePrevious] = useState(page === 0);
   const [disableNext, setDisableNext] = useState(page === maxPage);
   useEffect(() => {
