@@ -198,6 +198,35 @@ const About = () => {
           [<span style={{ color: "blue" }}>Detail</span>]
         </OutboundLink>
       </Text>
+
+      <Text fontSize="lg">
+        2. Wang J., Xiong Z., Duan Y., Liu J., Song Z., Peng X. (2021)
+        <strong>
+          The Importance Distribution of Drivers' Facial Expressions Varies over
+          Time!
+        </strong>{" "}
+        Accepted by Automotive UI'21 Work In Progress
+        <OutboundLink
+          target="_blank"
+          href="https://www.researchgate.net/publication/353805255_The_Importance_Distribution_of_Drivers'_Facial_Expressions_Varies_over_Time"
+        >
+          [<span style={{ color: "blue" }}>Detail</span>]
+        </OutboundLink>
+      </Text>
+
+      <Text fontSize="lg">
+        3. Jin W., Ming X., Song Z., Xiong Z., Peng X. (2021)
+        <strong>
+          Towards Emulating Internet-of-Vehicles on a Single Machine
+        </strong>{" "}
+        Accepted by Automotive UI'21 Work In Progress
+        <OutboundLink
+          target="_blank"
+          href="https://www.researchgate.net/publication/353806779_Towards_Emulating_Internet-of-Vehicles_on_a_Single_Machine"
+        >
+          [<span style={{ color: "blue" }}>Detail</span>]
+        </OutboundLink>
+      </Text>
       {/* <Heading mt={2} size="lg">
         Music
       </Heading>
