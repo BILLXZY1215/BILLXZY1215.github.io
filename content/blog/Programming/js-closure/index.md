@@ -284,6 +284,55 @@ console.log(counter.toString())
 
 变量 `numbers` 被放在闭包中被更新。
 
+## 更多例子
+
+```
+function foo() {
+  let x = 42
+  let inner  = function() { console.log(x) }
+  x = x+1
+  return inner
+}
+var f = foo()
+f() // logs 43
+```
+
+```
+function createObject() {
+  let x = 42;
+  return {
+    log() { console.log(x) },
+    increment() { x++ },
+    update(value) { x = value }
+  }
+}
+
+const o = createObject()
+o.increment()
+o.log() // 43
+o.update(5)
+o.log() // 5
+const p = createObject()
+p.log() // 42
+```
+
+```
+function foo() {
+  var result = []
+  for (var i = 0; i < 3; i++) {
+    result.push(function inner() { console.log(i) } )
+  }
+  return result
+}
+
+const result = foo()
+// The following will print `3`, three times...
+for (var i = 0; i < 3; i++) {
+  result[i]()
+}
+
+```
+
 ## Reference
 
 1. [掘金：（前端小智）我从来不理解 JavaScript 闭包，直到有人这样向我解释它](https://juejin.cn/post/6844903858636849159)
