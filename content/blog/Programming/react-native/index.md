@@ -1,9 +1,9 @@
 ---
 title: "React Native: react on iOS and Android"
-date: "2021-09-03"
+date: "2021-08-20"
 type: Programming
 description: " React Native 学习/踩坑笔记 持续更新"
-cover: "https://z3.ax1x.com/2021/07/29/WbRfO0.png"
+cover: "https://z3.ax1x.com/2021/09/03/h6We2Q.png"
 ---
 
 ## 引子
