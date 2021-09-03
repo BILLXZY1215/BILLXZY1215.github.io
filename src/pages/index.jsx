@@ -184,7 +184,8 @@ const About = () => {
         Publication
       </Badge>
       <Text fontSize="lg">
-        1. Zhang Y., Jin W., Xiong Z., Li Z., Liu Y., Peng X. (2021)
+        1. Zhang Y., Jin W., <strong>Xiong Z.</strong>, Li Z., Liu Y., Peng X.
+        (2021)
         <strong>
           Demystifying Interactions Between Driving Behaviors and Styles Through
           Self-clustering Algorithms.
@@ -200,7 +201,8 @@ const About = () => {
       </Text>
 
       <Text fontSize="lg">
-        2. Wang J., Xiong Z., Duan Y., Liu J., Song Z., Peng X. (2021)
+        2. Wang J., <strong>Xiong Z.</strong>, Duan Y., Liu J., Song Z., Peng X.
+        (2021)
         <strong>
           The Importance Distribution of Drivers' Facial Expressions Varies over
           Time!
@@ -215,7 +217,7 @@ const About = () => {
       </Text>
 
       <Text fontSize="lg">
-        3. Jin W., Ming X., Song Z., Xiong Z., Peng X. (2021)
+        3. Jin W., Ming X., Song Z., <strong>Xiong Z.</strong>, Peng X. (2021)
         <strong>
           Towards Emulating Internet-of-Vehicles on a Single Machine
         </strong>{" "}
