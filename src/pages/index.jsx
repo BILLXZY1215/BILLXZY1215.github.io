@@ -153,8 +153,9 @@ const About = () => {
         Currently, as a developer, I'm mainly focusing on{" "}
         <strong>front-end</strong> development. I'm learning{" "}
         <strong>JavaScript</strong>, <strong>JQuery</strong>,{" "}
-        <strong>React.js</strong> and <strong>Vue.js</strong>. I'm also paying
-        attention to the novel front-end techniques, such as{" "}
+        <strong>React.js</strong>, <strong>Vue.js</strong>,{" "}
+        <strong>React Native</strong> and <strong>Flutter</strong>. I'm also
+        paying attention to the novel front-end techniques, such as{" "}
         <strong>vite.js</strong>.
         <br />
         For <strong>back-end</strong>, I focus on <strong>Node.js</strong> and{" "}
