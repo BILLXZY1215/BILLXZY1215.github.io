@@ -1,6 +1,6 @@
 ---
 title: "React Native: react on iOS and Android"
-date: "2021-08-20"
+date: "2021-09-03"
 type: Programming
 description: " React Native 学习/踩坑笔记 持续更新"
 cover: "https://z3.ax1x.com/2021/07/29/WbRfO0.png"
@@ -8,7 +8,7 @@ cover: "https://z3.ax1x.com/2021/07/29/WbRfO0.png"
 
 ## 引子
 
-前几天接手一个安卓项目，刚一上来就是和 tflite 模型的结合，以及 ip camera 的连接功能。这让我一个非安卓开发者着实有点左右为难。另外，这个项目以后肯定也需要 iOS 的支持，于是我就想着得找一个跨端方案。摆在面前的有两个选项：Flutter 和 React-Native。
+八月初接手一个安卓项目，刚一上来就是和 tflite 模型的结合，以及 ip camera 的连接功能。这让我一个非安卓开发者着实有点左右为难。另外，这个项目以后肯定也需要 iOS 的支持，于是我就想着得找一个跨端方案。摆在面前的有两个选项：Flutter 和 React-Native。
 
 ![](1.png)
 
@@ -43,16 +43,6 @@ cover: "https://z3.ax1x.com/2021/07/29/WbRfO0.png"
 ## 基础知识
 
 Coming Soon...
-
-## tfjs-react-native
-
-Coming Soon... 或许新开一篇来讲，这篇就基础介绍好了 🤔
-
-以后有空可能再研究研究 Flutter，我看目前 Flutter 的生态要比 RN 略胜一筹。希望能拿一个项目来练练手，比较一下两者的区别。
-
-## Expo
-
-最近发现的...基于 RN 的项目 builder 和 sdk 集成环境。超级好用，有空补一补这个内容。
 
 ## 附 比较好用的 RN 库：
 
