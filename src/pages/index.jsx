@@ -112,16 +112,7 @@ const About = () => {
       <Text fontSize="md">
         Hi, I'm Zeyu. you can call be Bill as well. I'm a final year student
         from Univeristy of Nottigham, Ningbo China, currently, I'm a front-end
-        engineer trainee in{" "}
-        <a
-          href="https://taoyoumu.yashihq.com/"
-          target="_blank"
-          style={{ color: "red" }}
-          rel="noopener noreferrer"
-        >
-          yashi
-        </a>
-        ,{" "}
+        engineer in{" "}
         <a
           href="https://ufair.net.cn/"
           target="_blank"
