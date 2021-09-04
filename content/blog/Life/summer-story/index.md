@@ -3,7 +3,7 @@ title: Summer Story
 date: "2021-09-04"
 type: Life
 description: "原创 Demo:《夏日物语》"
-cover: "https://z3.ax1x.com/2021/08/06/fnP9ZF.jpg"
+cover: "https://z3.ax1x.com/2021/09/04/hgAt2V.png"
 ---
 
 ```
