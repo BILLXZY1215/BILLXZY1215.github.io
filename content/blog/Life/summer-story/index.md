@@ -21,7 +21,7 @@ cover: "https://z3.ax1x.com/2021/09/04/hgAt2V.png"
 
 A  Bm
 嘿 忧郁的你
-E     A
+E           A
 请不要再为我流泪
 
 A  Bm
@@ -36,7 +36,7 @@ E                 A
 
 D       A
 在 深夜的三环路
-E                A
+    E            A
 那颗思念的心 在炽热地跳动
 
 A  Bm
