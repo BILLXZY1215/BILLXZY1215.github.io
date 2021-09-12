@@ -18,6 +18,7 @@ import {
   Tooltip,
   useClipboard,
   useToast,
+  VStack,
 } from "@chakra-ui/react";
 import Bio from "../components/bio";
 import Layout from "../components/layout";
@@ -160,6 +161,67 @@ const About = () => {
         If you have some awesome projects that need to develop or maintain,
         please let me know.
       </Text>
+      <Badge fontSize="1em" pl={2} pr={2} mt={2} mb={2}>
+        Project
+      </Badge>
+      <br />
+      <Badge>WeChat Mini Program</Badge>
+      <HStack display="flex" flexWrap="wrap" justifyContent="flex-start">
+        <VStack>
+          <Text fontSize="lg">uCourse </Text>
+          <Image
+            src="https://z3.ax1x.com/2021/09/12/4SOCad.jpg"
+            borderRadius="full"
+            boxSize="100px"
+          />
+        </VStack>
+        <VStack>
+          <Text fontSize="lg">unncMap </Text>
+          <Image
+            src="https://z3.ax1x.com/2021/09/12/4SOHOS.jpg"
+            borderRadius="full"
+            boxSize="100px"
+          />
+        </VStack>
+        <VStack>
+          <Text fontSize="lg">Taoyoumu </Text>
+          <Image
+            src="https://z3.ax1x.com/2021/09/12/4SOLwQ.jpg"
+            borderRadius="full"
+            boxSize="100px"
+          />
+        </VStack>
+      </HStack>
+      <Badge>Android and iOS</Badge>
+      <Text> Serendipity App (Under Development), Built with React Native</Text>
+      <Badge>Web</Badge>
+      <br />
+      <a
+        href="https://ufair.net.cn/"
+        target="_blank"
+        style={{ color: "orange" }}
+        rel="noopener noreferrer"
+      >
+        uFair Official Website
+      </a>{" "}
+      <br />
+      <a
+        href="https://avalon.yashihq.com/livestreams"
+        target="_blank"
+        style={{ color: "purple" }}
+        rel="noopener noreferrer"
+      >
+        Avalon Marketing UI System
+      </a>{" "}
+      <br />
+      <a
+        href="http://cslinux.nottingham.edu.cn/~scyzx2/src/index.html"
+        target="_blank"
+        style={{ color: "green" }}
+        rel="noopener noreferrer"
+      >
+        Woolin Auto: Mask Selling System (Only Accessable in UNNC eduRoam)
+      </a>{" "}
       <Divider mt={2} mb={2} />
       <Badge fontSize="1em" pl={2} pr={2}>
         Researcher
@@ -171,6 +233,12 @@ const About = () => {
         detection and symbolic music applied in computer science. If you have
         some projects related to these areas, please let me know. Besides, I'm
         looking for an awesome master project related to those areas as well.
+      </Text>
+      <Badge fontSize="1em" pl={2} pr={2} mt={2}>
+        Project
+      </Badge>
+      <Text>
+        Final Year Project: AI Composer, supervised by Prof. Amin Farjudian.
       </Text>
       <Badge fontSize="1em" pl={2} pr={2} mt={2}>
         Publication
@@ -191,7 +259,6 @@ const About = () => {
           [<span style={{ color: "blue" }}>Detail</span>]
         </OutboundLink>
       </Text>
-
       <Text fontSize="lg">
         2. Wang J., <strong>Xiong Z.</strong>, Duan Y., Liu J., Song Z., Peng X.
         (2021)
@@ -207,7 +274,6 @@ const About = () => {
           [<span style={{ color: "blue" }}>Detail</span>]
         </OutboundLink>
       </Text>
-
       <Text fontSize="lg">
         3. Jin W., Ming X., Song Z., <strong>Xiong Z.</strong>, Peng X. (2021)
         <strong>
