@@ -266,7 +266,10 @@ const About = () => {
           The Importance Distribution of Drivers' Facial Expressions Varies over
           Time!
         </strong>{" "}
-        Accepted by Automotive UI'21 Work In Progress
+        In 13th International Conference on Automotive User Interfaces and
+        Interactive Vehicular Applications (AutomotiveUI '21 Adjunct).
+        Association for Computing Machinery, New York, NY, USA, 148– 151. DOI:
+        https://doi.org/10.1145/3473682.3480283
         <OutboundLink
           target="_blank"
           href="https://www.researchgate.net/publication/353805255_The_Importance_Distribution_of_Drivers'_Facial_Expressions_Varies_over_Time"
@@ -279,7 +282,10 @@ const About = () => {
         <strong>
           Towards Emulating Internet-of-Vehicles on a Single Machine
         </strong>{" "}
-        Accepted by Automotive UI'21 Work In Progress
+        In 13th International Conference on Automotive User Interfaces and
+        Interactive Vehicular Applications (AutomotiveUI '21 Adjunct).
+        Association for Computing Machinery, New York, NY, USA, 112-114. DOI:
+        https://doi.org/10.1145/3473682.3480275
         <OutboundLink
           target="_blank"
           href="https://www.researchgate.net/publication/353806779_Towards_Emulating_Internet-of-Vehicles_on_a_Single_Machine"
