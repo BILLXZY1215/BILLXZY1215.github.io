@@ -293,6 +293,21 @@ const About = () => {
           [<span style={{ color: "blue" }}>Detail</span>]
         </OutboundLink>
       </Text>
+      <Text fontSize="lg">
+        4. <strong>Xiong Z.</strong>, Wang J., Jin W., Liu J., Duan Y., Song Z.,
+        Peng X. (2021)
+        <strong>
+          Face2Statistics: User-Friendly, Low-Cost and Effective Alternative to
+          In-Vehicle Sensors/Monitors for Drivers
+        </strong>{" "}
+        Accepted by HCI International 2022
+        {/* <OutboundLink
+          target="_blank"
+          href="https://www.researchgate.net/publication/353806779_Towards_Emulating_Internet-of-Vehicles_on_a_Single_Machine"
+        >
+          [<span style={{ color: "blue" }}>Detail</span>]
+        </OutboundLink> */}
+      </Text>
       {/* <Heading mt={2} size="lg">
         Music
       </Heading>
