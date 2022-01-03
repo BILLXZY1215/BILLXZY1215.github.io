@@ -180,6 +180,32 @@ git checkout <当前分支>
 git cherry-pick <ID>
 ```
 
+### **关于 Tag**
+
+新建本地 Tag
+
+```
+git tag <Tag Name>
+```
+
+删除本地 Tag
+
+```
+git tag -d <Tag Name>
+```
+
+新建远程 Tag
+
+```
+git push origin <Tag Name>
+```
+
+删除远程 Tag
+
+```
+git push origin :refs/tags/<Tag Name>
+```
+
 ### **多人合作**
 
 ![](7.png)
