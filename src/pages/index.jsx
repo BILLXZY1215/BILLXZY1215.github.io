@@ -191,6 +191,14 @@ const About = () => {
             boxSize="100px"
           />
         </VStack>
+        <VStack>
+          <Text fontSize="lg">Alllink UK </Text>
+          <Image
+            src="https://s1.ax1x.com/2022/03/09/bRDssJ.png"
+            borderRadius="full"
+            boxSize="100px"
+          />
+        </VStack>
       </HStack>
       <Badge>Android and iOS</Badge>
       <Text> Serendipity App (Under Development), Built with React Native</Text>
@@ -238,7 +246,13 @@ const About = () => {
         Project
       </Badge>
       <Text>
-        Final Year Project: AI Composer, supervised by Prof. Amin Farjudian.
+        Final Year Project: AI Composer -- Image and Music Style Migration, supervised by Prof.         
+        <OutboundLink
+          target="_blank"
+          href="https://www.nottingham.edu.cn/en/People/Profile.aspx?id=797da22d-f55c-4b24-8c81-4bcfa4ef12dc&language=en-GB"
+        >
+          <span style={{ color: "blue" }}> Amin Farjudian</span>
+        </OutboundLink>.
       </Text>
       <Badge fontSize="1em" pl={2} pr={2} mt={2}>
         Publication
@@ -301,12 +315,40 @@ const About = () => {
           In-Vehicle Sensors/Monitors for Drivers
         </strong>{" "}
         Accepted by HCI International 2022
-        {/* <OutboundLink
+        <OutboundLink
           target="_blank"
-          href="https://www.researchgate.net/publication/353806779_Towards_Emulating_Internet-of-Vehicles_on_a_Single_Machine"
+          href="https://www.researchgate.net/publication/358532608_Face2Statistics_User-Friendly_Low-Cost_and_Effective_Alternative_to_In-Vehicle_SensorsMonitors_for_Drivers"
         >
           [<span style={{ color: "blue" }}>Detail</span>]
-        </OutboundLink> */}
+        </OutboundLink>
+      </Text>
+      <Text fontSize="lg">
+        5. Liu J., Jin W., He Z., Ming X., Duan Y., <strong>Xiong Z.</strong>, 
+        Peng X. (2022)
+        <strong>
+          HUT: Enabling High-UTility, Batched Queries under Differential Privacy Protection for Internet-of-Vehicles
+        </strong>{" "}
+        In arxiv Feb tech report, DOI: https://doi.org/10.48550/arXiv.2202.0649
+        <OutboundLink
+          target="_blank"
+          href="https://arxiv.org/abs/2202.06495"
+        >
+          [<span style={{ color: "blue" }}>Detail</span>]
+        </OutboundLink>
+      </Text>
+      <Text fontSize="lg">
+        6. Jin W., Duan Y., Huang S., <strong>Xiong Z.</strong>, 
+        Peng X. (2022)
+        <strong>
+          BROOK Dataset: A Playground for Exploiting Data-Driven Techniques in Human-Vehicle Interactive Designs
+        </strong>{" "}
+        In arxiv Feb tech report, DOI: https://doi.org/10.48550/arXiv.2202.06494
+        <OutboundLink
+          target="_blank"
+          href="https://arxiv.org/abs/2202.06494"
+        >
+          [<span style={{ color: "blue" }}>Detail</span>]
+        </OutboundLink>
       </Text>
       {/* <Heading mt={2} size="lg">
         Music
