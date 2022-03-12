@@ -194,7 +194,7 @@ const About = () => {
         <VStack>
           <Text fontSize="lg">Alllink UK </Text>
           <Image
-            src="https://s1.ax1x.com/2022/03/09/bRDssJ.png"
+            src="https://s1.ax1x.com/2022/03/12/bTgzAP.png"
             borderRadius="full"
             boxSize="100px"
           />
