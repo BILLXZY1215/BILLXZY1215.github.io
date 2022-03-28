@@ -1,22 +1,26 @@
 ---
-title: "AI Composer: Image to Music Style Migration (Result Display)"
-date: "2021-11-29"
+title: 'AI Composer: Image to Music Style Migration (Result Display)'
+date: '2022-03-28'
 type: Research
-description: "Final Year Project 结果展示"
-cover: "https://z3.ax1x.com/2021/11/29/oMWHA0.jpg"
+description: 'Final Year Project 结果展示'
+cover: 'https://z3.ax1x.com/2021/11/29/oMWHA0.jpg'
 ---
 
 This page is used to display the experimental results of FYP.
 
-## Preliminary Result of Groove2Groove
+# Preliminary Results of Groove2Groove
 
-### Content Image Input
+## Attempt1: Direct Conversion
+
+### Piano-Roll-Matrix Based Methods
+
+#### Content Image Input
 
 Album cover of《Amily》
 
 ![](Amily.jpeg)
 
-### Style Music Input
+#### Style Music Input
 
 《Fantastic Voyage》, Lakeside, 1981
 
@@ -26,7 +30,7 @@ Album cover of《Amily》
   <source id="style" src="./style.mp3">
 </audio>
 
-### Result: Find Closest + Groove2Groove
+#### Result: Find Closest + Groove2Groove
 
 Conversion Result:
 
@@ -44,7 +48,7 @@ Final Output:
   <source id="1_o" src="./1_o.mp3">
 </audio>
 
-### Result: Triad Mapping + Groove2Groove
+#### Result: Triad Mapping + Groove2Groove
 
 Conversion Result:
 
@@ -58,7 +62,7 @@ Final Output:
 
 ![](triad-output.png)
 
-### Result: Range of Various Instruments (RVI) + Groove2Groove
+#### Result: Range of Various Instruments (RVI) + Groove2Groove
 
 Conversion Result:
 
@@ -76,7 +80,7 @@ Final Output:
   <source id="3_o" src="./3_o.mp3">
 </audio>
 
-### Discussion: Duration -- crucial factor
+#### Discussion: Duration -- crucial factor
 
 Final Output of RVI (duration = 0.2s = style duration)
 
@@ -100,6 +104,42 @@ Final Output of RVI (duration = 2s)
 
 <audio id="audio" controls="" preload="none">
   <source id="3_o_2" src="./3_o_2.mp3">
+</audio>
+
+### Color Based Methods
+
+#### Content Input
+
+Album cover of 《The Dark Side of the Moon》.
+
+![](yzam.jpeg)
+
+#### Style Input
+
+《Fantastic Voyage》, Lakeside, 1981
+
+![](style.png)
+
+<audio id="audio" controls="" preload="none">
+  <source id="style" src="./style.mp3">
+</audio>
+
+#### Result of Color + Chord Progress + Groove2Groove
+
+Conversion Result:
+
+![](colorcp.png)
+
+<audio id="audio" controls="" preload="none">
+  <source id="4" src="./4.mp3">
+</audio>
+
+Final Result:
+
+![](colorcp-res.png)
+
+<audio id="audio" controls="" preload="none">
+  <source id="4_o" src="./4_o.mp3">
 </audio>
 
 ## Appendix
