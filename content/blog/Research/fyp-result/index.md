@@ -142,6 +142,38 @@ Final Result:
   <source id="4_o" src="./4_o.mp3">
 </audio>
 
+## Attempt2: Content Extraction
+
+### Content Image Input
+
+![](album.png)
+
+### Style Input
+
+#### Blues
+
+<audio id="audio" controls="" preload="none">
+  <source id="Blues" src="./Blues.mp3">
+</audio>
+
+#### Country
+
+<audio id="audio" controls="" preload="none">
+  <source id="Country" src="./Country.mp3">
+</audio>
+
+#### Electronic
+
+<audio id="audio" controls="" preload="none">
+  <source id="Electronic" src="./Electronic.mp3">
+</audio>
+
+#### Jazz
+
+<audio id="audio" controls="" preload="none">
+  <source id="Jazz" src="./Jazz.mp3">
+</audio>
+
 ## Appendix
 
 ### Video Resource of 《Amily》
