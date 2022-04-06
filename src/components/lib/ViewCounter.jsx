@@ -55,14 +55,14 @@ const ViewCounter = ({ path, colorScheme, extraText, badge }) => {
     margin: "0 0 0 8px",
     // margin: "2px 0 0 0",
     padding: "1px 3px 1px 3px",
-    fontSize: "5px",
+    fontSize: "10px",
     overflow: "auto",
   };
 
   const titleStyle = {
     width: "100%",
     margin: "2px 0 0 0",
-    fontSize: "5px",
+    fontSize: "10px",
     overflow: "auto",
   };
 
