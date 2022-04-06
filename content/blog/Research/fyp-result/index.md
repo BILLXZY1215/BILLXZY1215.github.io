@@ -142,7 +142,7 @@ Final Result:
   <source id="4_o" src="./4_o.mp3">
 </audio>
 
-## Attempt2: Content Extraction
+## Attempt2: Content Extraction (BGT-G2G)
 
 ### Content Image Input
 
@@ -172,6 +172,162 @@ Final Result:
 
 <audio id="audio" controls="" preload="none">
   <source id="Jazz" src="./Jazz.mp3">
+</audio>
+
+### Result for 《Tang Dynasty》
+
+#### Blues
+
+<audio id="audio" controls="" preload="none">
+  <source id="唐朝__Blues" src="./1__Blues.mp3">
+</audio>
+
+#### Country
+
+<audio id="audio" controls="" preload="none">
+  <source id="唐朝__Country" src="./唐朝__Country.mp3">
+</audio>
+
+#### Electronic
+
+<audio id="audio" controls="" preload="none">
+  <source id="唐朝__Electronic" src="./唐朝__Electronic.mp3">
+</audio>
+
+#### Jazz
+
+<audio id="audio" controls="" preload="none">
+  <source id="唐朝__Jazz" src="./唐朝__Jazz.mp3">
+</audio>
+
+### Result for 《Love is a happy bullet》
+
+#### Blues
+
+<audio id="audio" controls="" preload="none">
+  <source id="在雨中__Blues" src="./在雨中__Blues.mp3">
+</audio>
+
+#### Country
+
+<audio id="audio" controls="" preload="none">
+  <source id="在雨中__Country" src="./在雨中__Country.mp3">
+</audio>
+
+#### Electronic
+
+<audio id="audio" controls="" preload="none">
+  <source id="在雨中__Electronic" src="./在雨中__Electronic.mp3">
+</audio>
+
+#### Jazz
+
+<audio id="audio" controls="" preload="none">
+  <source id="在雨中__Jazz" src="./在雨中__Jazz.mp3">
+</audio>
+
+### Result for《Amily》
+
+#### Blues
+
+<audio id="audio" controls="" preload="none">
+  <source id="Amily__Blues" src="./Amily__Blues.mp3">
+</audio>
+
+#### Country
+
+<audio id="audio" controls="" preload="none">
+  <source id="Amily__Country" src="./Amily__Country.mp3">
+</audio>
+
+#### Electronic
+
+<audio id="audio" controls="" preload="none">
+  <source id="Amily__Electronic" src="./Amily__Electronic.mp3">
+</audio>
+
+#### Jazz
+
+<audio id="audio" controls="" preload="none">
+  <source id="Amily__Jazz" src="./Amily__Jazz.mp3">
+</audio>
+
+### Result for 《Abbey Road》
+
+#### Blues
+
+<audio id="audio" controls="" preload="none">
+  <source id="Abbey-Road__Blues" src="./Abbey-Road__Blues.mp3">
+</audio>
+
+#### Country
+
+<audio id="audio" controls="" preload="none">
+  <source id="Abbey-Road__Country" src="./Abbey-Road__Country.mp3">
+</audio>
+
+#### Electronic
+
+<audio id="audio" controls="" preload="none">
+  <source id="Abbey-Road__Electronic" src="./Abbey-Road__Electronic.mp3">
+</audio>
+
+#### Jazz
+
+<audio id="audio" controls="" preload="none">
+  <source id="Abbey-Road__Jazz" src="./Abbey-Road__Jazz.mp3">
+</audio>
+
+### Result for 《The Dark Side of the Moon》
+
+#### Blues
+
+<audio id="audio" controls="" preload="none">
+  <source id="TDSOTM__Blues" src="./TDSOTM__Blues.mp3">
+</audio>
+
+#### Country
+
+<audio id="audio" controls="" preload="none">
+  <source id="TDSOTM__Country" src="./TDSOTM__Country.mp3">
+</audio>
+
+#### Electronic
+
+<audio id="audio" controls="" preload="none">
+  <source id="TDSOTM__Electronic" src="./TDSOTM__Electronic.mp3">
+</audio>
+
+#### Jazz
+
+<audio id="audio" controls="" preload="none">
+  <source id="TDSOTM__Jazz" src="./TDSOTM__Jazz.mp3">
+</audio>
+
+### Result for 《Bury the Hatchet》
+
+#### Blues
+
+<audio id="audio" controls="" preload="none">
+  <source id="bury-the-hatchet__Blues" src="./bury-the-hatchet__Blues.mp3">
+</audio>
+
+#### Country
+
+<audio id="audio" controls="" preload="none">
+  <source id="bury-the-hatchet__Country" src="./bury-the-hatchet__Country.mp3">
+</audio>
+
+#### Electronic
+
+<audio id="audio" controls="" preload="none">
+  <source id="bury-the-hatchet__Electronic" src="./bury-the-hatchet__Electronic.mp3">
+</audio>
+
+#### Jazz
+
+<audio id="audio" controls="" preload="none">
+  <source id="bury-the-hatchet__Jazz" src="./bury-the-hatchet__Jazz.mp3">
 </audio>
 
 ## Appendix
