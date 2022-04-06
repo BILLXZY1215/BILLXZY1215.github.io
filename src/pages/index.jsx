@@ -112,7 +112,7 @@ const About = () => {
 			</Badge>
 			<Text fontSize='md'>
 				Hi, I'm Zeyu. you can call be Bill as well. I'm a final year student
-				from Univeristy of Nottigham, Ningbo China, currently, I'm a front-end
+				from Univeristy of Nottigham, Ningbo China, currently, I'm a full-stack
 				engineer in{' '}
 				<a
 					href='https://ufair.net.cn/'
