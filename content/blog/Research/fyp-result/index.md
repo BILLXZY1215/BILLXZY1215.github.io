@@ -152,11 +152,15 @@ Final Result:
 
 #### Blues
 
+![](Blues.png)
+
 <audio id="audio" controls="" preload="none">
   <source id="Blues" src="./Blues.mp3">
 </audio>
 
 #### Country
+
+![](Country.png)
 
 <audio id="audio" controls="" preload="none">
   <source id="Country" src="./Country.mp3">
@@ -164,11 +168,15 @@ Final Result:
 
 #### Electronic
 
+![](Electronic.png)
+
 <audio id="audio" controls="" preload="none">
   <source id="Electronic" src="./Electronic.mp3">
 </audio>
 
 #### Jazz
+
+![](Jazz.png)
 
 <audio id="audio" controls="" preload="none">
   <source id="Jazz" src="./Jazz.mp3">
@@ -178,11 +186,15 @@ Final Result:
 
 #### Blues
 
+![](Tang_Dynasty_Blues.png)
+
 <audio id="audio" controls="" preload="none">
   <source id="唐朝__Blues" src="./1__Blues.mp3">
 </audio>
 
 #### Country
+
+![](Tang_Dynasty_Country.png)
 
 <audio id="audio" controls="" preload="none">
   <source id="唐朝__Country" src="./唐朝__Country.mp3">
@@ -190,11 +202,15 @@ Final Result:
 
 #### Electronic
 
+![](Tang_Dynasty_Electronic.png)
+
 <audio id="audio" controls="" preload="none">
   <source id="唐朝__Electronic" src="./唐朝__Electronic.mp3">
 </audio>
 
 #### Jazz
+
+![](Tang_Dynasty_Jazz.png)
 
 <audio id="audio" controls="" preload="none">
   <source id="唐朝__Jazz" src="./唐朝__Jazz.mp3">
@@ -204,11 +220,15 @@ Final Result:
 
 #### Blues
 
+![](2_Blues.png)
+
 <audio id="audio" controls="" preload="none">
   <source id="在雨中__Blues" src="./在雨中__Blues.mp3">
 </audio>
 
 #### Country
+
+![](2_Country.png)
 
 <audio id="audio" controls="" preload="none">
   <source id="在雨中__Country" src="./在雨中__Country.mp3">
@@ -216,11 +236,15 @@ Final Result:
 
 #### Electronic
 
+![](2_Electronic.png)
+
 <audio id="audio" controls="" preload="none">
   <source id="在雨中__Electronic" src="./在雨中__Electronic.mp3">
 </audio>
 
 #### Jazz
+
+![](2_Jazz.png)
 
 <audio id="audio" controls="" preload="none">
   <source id="在雨中__Jazz" src="./在雨中__Jazz.mp3">
@@ -230,11 +254,15 @@ Final Result:
 
 #### Blues
 
+![](3_Blues.png)
+
 <audio id="audio" controls="" preload="none">
   <source id="Amily__Blues" src="./Amily__Blues.mp3">
 </audio>
 
 #### Country
+
+![](3_Country.png)
 
 <audio id="audio" controls="" preload="none">
   <source id="Amily__Country" src="./Amily__Country.mp3">
@@ -242,11 +270,15 @@ Final Result:
 
 #### Electronic
 
+![](3_Electronic.png)
+
 <audio id="audio" controls="" preload="none">
   <source id="Amily__Electronic" src="./Amily__Electronic.mp3">
 </audio>
 
 #### Jazz
+
+![](3_Jazz.png)
 
 <audio id="audio" controls="" preload="none">
   <source id="Amily__Jazz" src="./Amily__Jazz.mp3">
@@ -256,11 +288,15 @@ Final Result:
 
 #### Blues
 
+![](4_Blues.png)
+
 <audio id="audio" controls="" preload="none">
   <source id="Abbey-Road__Blues" src="./Abbey-Road__Blues.mp3">
 </audio>
 
 #### Country
+
+![](4_Country.png)
 
 <audio id="audio" controls="" preload="none">
   <source id="Abbey-Road__Country" src="./Abbey-Road__Country.mp3">
@@ -268,11 +304,15 @@ Final Result:
 
 #### Electronic
 
+![](4_Electronic.png)
+
 <audio id="audio" controls="" preload="none">
   <source id="Abbey-Road__Electronic" src="./Abbey-Road__Electronic.mp3">
 </audio>
 
 #### Jazz
+
+![](4_Jazz.png)
 
 <audio id="audio" controls="" preload="none">
   <source id="Abbey-Road__Jazz" src="./Abbey-Road__Jazz.mp3">
@@ -282,11 +322,15 @@ Final Result:
 
 #### Blues
 
+![](5_Blues.png)
+
 <audio id="audio" controls="" preload="none">
   <source id="TDSOTM__Blues" src="./TDSOTM__Blues.mp3">
 </audio>
 
 #### Country
+
+![](5_Country.png)
 
 <audio id="audio" controls="" preload="none">
   <source id="TDSOTM__Country" src="./TDSOTM__Country.mp3">
@@ -294,11 +338,15 @@ Final Result:
 
 #### Electronic
 
+![](5_Electronic.png)
+
 <audio id="audio" controls="" preload="none">
   <source id="TDSOTM__Electronic" src="./TDSOTM__Electronic.mp3">
 </audio>
 
 #### Jazz
+
+![](5_Jazz.png)
 
 <audio id="audio" controls="" preload="none">
   <source id="TDSOTM__Jazz" src="./TDSOTM__Jazz.mp3">
@@ -308,11 +356,15 @@ Final Result:
 
 #### Blues
 
+![](6_Blues.png)
+
 <audio id="audio" controls="" preload="none">
   <source id="bury-the-hatchet__Blues" src="./bury-the-hatchet__Blues.mp3">
 </audio>
 
 #### Country
+
+![](6_Country.png)
 
 <audio id="audio" controls="" preload="none">
   <source id="bury-the-hatchet__Country" src="./bury-the-hatchet__Country.mp3">
@@ -320,11 +372,15 @@ Final Result:
 
 #### Electronic
 
+![](6_Electronic.png)
+
 <audio id="audio" controls="" preload="none">
   <source id="bury-the-hatchet__Electronic" src="./bury-the-hatchet__Electronic.mp3">
 </audio>
 
 #### Jazz
+
+![](6_Jazz.png)
 
 <audio id="audio" controls="" preload="none">
   <source id="bury-the-hatchet__Jazz" src="./bury-the-hatchet__Jazz.mp3">
