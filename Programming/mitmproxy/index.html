@@ -1,0 +1,725 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.294bd6de9cd73ba9affc.css" data-identity="gatsby-global-css">@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-8d7d79679b70dbe27172b6460e7a7910.woff2) format("woff2"),url(/static/montserrat-latin-100-ec38980a9e0119a379e2a9b3dbb1901a.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-e279051046ba1286706adc886cf1c96b.woff2) format("woff2"),url(/static/montserrat-latin-100italic-3b325a3173c8207435cd1b76e19bf501.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-9d266fbbfa6cab7009bd56003b1eeb67.woff2) format("woff2"),url(/static/montserrat-latin-200-2d8ba08717110d27122e54c34b8a5798.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-6e5b3756583bb2263eb062eae992735e.woff2) format("woff2"),url(/static/montserrat-latin-200italic-a0d6f343e4b536c582926255367a57da.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-00b3e893aab5a8fd632d6342eb72551a.woff2) format("woff2"),url(/static/montserrat-latin-300-ea303695ceab35f17e7d062f30e0173b.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-56f34ea368f6aedf89583d444bbcb227.woff2) format("woff2"),url(/static/montserrat-latin-300italic-54b0bf2c8c4c12ffafd803be2466a790.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-b71748ae4f80ec8c014def4c5fa8688b.woff2) format("woff2"),url(/static/montserrat-latin-400-0659a9f4e90db5cf51b50d005bff1e41.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-6eed6b4cbb809c6efc7aa7ddad6dbe3e.woff2) format("woff2"),url(/static/montserrat-latin-400italic-7583622cfde30ae49086d18447ab28e7.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-091b209546e16313fd4f4fc36090c757.woff2) format("woff2"),url(/static/montserrat-latin-500-edd311588712a96bbf435fad264fff62.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-c90ced68b46050061d1a41842d6dfb43.woff2) format("woff2"),url(/static/montserrat-latin-500italic-5146cbfe02b1deea5dffea27a5f2f998.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-0480d2f8a71f38db8633b84d8722e0c2.woff2) format("woff2"),url(/static/montserrat-latin-600-b77863a375260a05dd13f86a1cee598f.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-cf46ffb11f3a60d7df0567f8851a1d00.woff2) format("woff2"),url(/static/montserrat-latin-600italic-c4fcfeeb057724724097167e57bd7801.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-7dbcc8a5ea2289d83f657c25b4be6193.woff2) format("woff2"),url(/static/montserrat-latin-700-99271a835e1cae8c76ef8bba99a8cc4e.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-c41ad6bdb4bd504a843d546d0a47958d.woff2) format("woff2"),url(/static/montserrat-latin-700italic-6779372f04095051c62ed36bc1dcc142.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-db9a3e0ba7eaea32e5f55328ace6cf23.woff2) format("woff2"),url(/static/montserrat-latin-800-4e3c615967a2360f5db87d2f0fd2456f.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-bf45bfa14805969eda318973947bc42b.woff2) format("woff2"),url(/static/montserrat-latin-800italic-fe82abb0bcede51bf724254878e0c374.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-e66c7edc609e24bacbb705175669d814.woff2) format("woff2"),url(/static/montserrat-latin-900-8211f418baeb8ec880b80ba3c682f957.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-4454c775e48152c1a72510ceed3603e2.woff2) format("woff2"),url(/static/montserrat-latin-900italic-efcaa0f6a82ee0640b83a0916e6e8d68.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-fc117160c69a8ea0851b26dd14748ee4.woff2) format("woff2"),url(/static/merriweather-latin-300-58b18067ebbd21fda77b67e73c241d3b.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-fe29961474f8dbf77c0aa7b9a629e4bc.woff2) format("woff2"),url(/static/merriweather-latin-300italic-23c3f1f88683618a4fb8d265d33d383a.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-d9479e8023bef9cbd9bf8d6eabd6bf36.woff2) format("woff2"),url(/static/merriweather-latin-400-040426f99ff6e00b86506452e0d1f10b.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-2de7bfeaf08fb03d4315d49947f062f7.woff2) format("woff2"),url(/static/merriweather-latin-400italic-79db67aca65f5285964ab332bd65f451.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-4b08e01d805fa35d7bf777f1b24314ae.woff2) format("woff2"),url(/static/merriweather-latin-700-22fb8afba4ab1f093b6ef9e28a9b6e92.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-cd92541b177652fffb6e3b952f1c33f1.woff2) format("woff2"),url(/static/merriweather-latin-700italic-f87f3d87cea0dd0979bfc8ac9ea90243.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-f813fc6a4bee46eda5224ac7ebf1b7be.woff2) format("woff2"),url(/static/merriweather-latin-900-5d4e42cb44410674acd99153d57df032.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-b7901d85486871c1779c0e93ddd85656.woff2) format("woff2"),url(/static/merriweather-latin-900italic-9647f9fdab98756989a8a5550eb205c3.woff) format("woff")}
+
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{-webkit-text-size-adjust:100%;line-height:1.15}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}[hidden]{display:none}:root{--maxWidth-none:"none";--maxWidth-xs:20rem;--maxWidth-sm:24rem;--maxWidth-md:28rem;--maxWidth-lg:32rem;--maxWidth-xl:36rem;--maxWidth-2xl:42rem;--maxWidth-3xl:48rem;--maxWidth-4xl:56rem;--maxWidth-adapt:75rem;--maxWidth-full:"100%";--maxWidth-wrapper:var(--maxWidth-adapt);--spacing-px:"1px";--spacing-0:0;--spacing-1:0.25rem;--spacing-2:0.5rem;--spacing-3:0.75rem;--spacing-4:1rem;--spacing-5:1.25rem;--spacing-6:1.5rem;--spacing-8:2rem;--spacing-10:2.5rem;--spacing-12:3rem;--spacing-16:4rem;--spacing-20:5rem;--spacing-24:6rem;--spacing-32:8rem;--fontFamily-sans:Montserrat,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--fontFamily-serif:"Merriweather","Georgia",Cambria,"Times New Roman",Times,serif;--font-body:var(--fontFamily-serif);--font-heading:var(--fontFamily-sans);--fontWeight-normal:400;--fontWeight-medium:500;--fontWeight-semibold:600;--fontWeight-bold:700;--fontWeight-extrabold:800;--fontWeight-black:900;--fontSize-root:16px;--lineHeight-none:1;--lineHeight-tight:1.1;--lineHeight-normal:1.5;--lineHeight-relaxed:1.625;--fontSize-0:0.833rem;--fontSize-1:1rem;--fontSize-2:1.2rem;--fontSize-3:1.44rem;--fontSize-4:1.728rem;--fontSize-5:2.074rem;--fontSize-6:2.488rem;--fontSize-7:2.986rem;--color-primary:#005b99;--color-text:#2e353f;--color-text-light:#4f5969;--color-heading:#1a202c;--color-heading-black:#000;--color-accent:#d1dce5}*,:after,:before{box-sizing:border-box}html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-size:var(--fontSize-root);line-height:var(--lineHeight-normal)}body{color:var(--color-text);font-family:var(--font-body);font-size:var(--fontSize-1)}footer{padding:var(--spacing-6) var(--spacing-0)}hr{background:var(--color-accent);border:0;height:1px}h1,h2,h3,h4,h5,h6{font-family:var(--font-heading);letter-spacing:-.025em;line-height:var(--lineHeight-tight);margin-bottom:var(--spacing-6);margin-top:var(--spacing-12)}h2,h3,h4,h5,h6{color:var(--color-heading);font-weight:var(--fontWeight-bold)}h1{color:var(--color-heading-black);font-size:var(--fontSize-6);font-weight:var(--fontWeight-black)}h2{font-size:var(--fontSize-5)}h3{font-size:var(--fontSize-4)}h4{font-size:var(--fontSize-3)}h5{font-size:var(--fontSize-2)}h6{font-size:var(--fontSize-1)}h1>a,h2>a,h3>a,h4>a,h5>a,h6>a{color:inherit;text-decoration:none}p{--baseline-multiplier:0.179;--x-height-multiplier:0.35;line-height:var(--lineHeight-relaxed);margin:var(--spacing-0) var(--spacing-0) var(--spacing-8) var(--spacing-0)}ol,p,ul{padding:var(--spacing-0)}ol,ul{list-style-image:none;list-style-position:outside;margin-bottom:var(--spacing-8);margin-left:var(--spacing-0);margin-right:var(--spacing-0)}ol li,ul li{padding-left:var(--spacing-0)}li>p,ol li,ul li{margin-bottom:calc(var(--spacing-8)/2)}li :last-child{margin-bottom:var(--spacing-0)}li>ul{margin-left:var(--spacing-8);margin-top:calc(var(--spacing-8)/2)}blockquote{border-left:var(--spacing-1) solid var(--color-primary);color:var(--color-text-light);font-size:var(--fontSize-2);font-style:italic;margin-bottom:var(--spacing-8);margin-left:calc(var(--spacing-6)*-1);margin-right:var(--spacing-8);padding:var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-6)}blockquote>:last-child{margin-bottom:var(--spacing-0)}blockquote>ol,blockquote>ul{list-style-position:inside}table{border-collapse:collapse;border-spacing:.25rem;margin-bottom:var(--spacing-8);width:100%}table thead tr th{border-bottom:1px solid var(--color-accent)}a{color:var(--color-primary)}a:focus,a:hover{text-decoration:none}.global-wrapper{margin:var(--spacing-0) auto;max-width:var(--maxWidth-wrapper);padding:var(--spacing-10) var(--spacing-5)}.global-wrapper[data-is-root-path=true] .bio{margin-bottom:var(--spacing-20)}.global-header{font-weight:700;margin-bottom:var(--spacing-12)}.main-heading{font-size:var(--fontSize-7);margin:0}.post-list-item{display:"flex";margin-bottom:var(--spacing-8);margin-top:var(--spacing-8)}.post-list-item p{margin-bottom:var(--spacing-0)}.post-list-item h2{color:var(--color-primary);font-size:var(--fontSize-4);font-weight:700;margin-bottom:var(--spacing-2);margin-top:var(--spacing-0)}.post-list-item header{margin-bottom:var(--spacing-4)}.header-link-home{font-family:var(--font-heading);font-size:var(--fontSize-2);font-weight:var(--fontWeight-bold);text-decoration:none}.bio{display:flex;margin-bottom:var(--spacing-16)}.bio-avatar,.bio p{margin-bottom:var(--spacing-0)}.bio-avatar{border-radius:100%;margin-right:var(--spacing-4);min-width:50px}.blog-post header h1{margin:var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0)}.blog-post header p{font-family:var(--font-heading);font-size:var(--fontSize-2)}.blog-post-nav ul{margin:var(--spacing-0)}.gatsby-highlight{margin-bottom:var(--spacing-8)}@media (max-width:42rem){blockquote{margin-left:var(--spacing-0);padding:var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-4)}ol,ul{list-style-position:inside}}code[class*=language-],pre[class*=language-]{word-wrap:normal;background:none;color:#000;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;text-align:left;text-shadow:0 1px #fff;white-space:pre;word-break:normal;word-spacing:normal}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{background:#b3d4fc;text-shadow:none}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{margin:.5em 0;overflow:auto;padding:1em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{border-radius:.3em;padding:.1em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{background:hsla(0,0%,100%,.5);color:#9a6e3a}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><meta name="generator" content="Gatsby 3.14.6"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="icon" href="/favicon-32x32.png?v=4a9773549091c227cd2eb82ccd9c5e3a" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><title data-react-helmet="true">mitmproxy: a free and open source interactive HTTPS proxy | Zeyu&#x27;s Blog</title><meta data-react-helmet="true" name="description" content="mitmproxy 初探 基本操作"/><meta data-react-helmet="true" property="og:title" content="mitmproxy: a free and open source interactive HTTPS proxy"/><meta data-react-helmet="true" property="og:description" content="mitmproxy 初探 基本操作"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content=""/><meta data-react-helmet="true" name="twitter:title" content="mitmproxy: a free and open source interactive HTTPS proxy"/><meta data-react-helmet="true" name="twitter:description" content="mitmproxy 初探 基本操作"/><link as="script" rel="preload" href="/webpack-runtime-3d9dfe9e59559d1a6b8b.js"/><link as="script" rel="preload" href="/framework-e413e527015be9a1bdfd.js"/><link as="script" rel="preload" href="/3118b2d3-4a1809b502ab77e0a888.js"/><link as="script" rel="preload" href="/d91e9ae9-024a179e10d7143f23dc.js"/><link as="script" rel="preload" href="/ff239f9d-2dc0f60e2b21dca7b782.js"/><link as="script" rel="preload" href="/app-c6579f3240ed375c4253.js"/><link as="script" rel="preload" href="/5e2a4920-353357fa5f818914ce25.js"/><link as="script" rel="preload" href="/commons-998332ede0729171a8f8.js"/><link as="script" rel="preload" href="/57dccc81d1607bd0d863a6a3853229f316346d50-8497c6899d22ce04787a.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-3f1083058762dd43df98.js"/><link as="fetch" rel="preload" href="/page-data/Programming/mitmproxy/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2841359383.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3257411868.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="global-wrapper" data-is-root-path="false"><header class="global-header"><a class="header-link-home" href="/">Zeyu&#x27;s Blog</a></header><main><article class="blog-post" itemscope="" itemType="http://schema.org/Article"><header><h1 itemProp="headline">mitmproxy: a free and open source interactive HTTPS proxy</h1><p>July 01, 2021<div style="width:100%;margin:2px 0 0 0;font-size:10px;overflow:auto">---<!-- --> Views <!-- --> </div></p></header><section itemProp="articleBody"><h2>什么是 mitmproxy</h2>
+<p>mitmproxy, 全称是 man-in-the-middle proxy:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 435px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/9dff634260864f970e80cdc21b7ba7ba/330eb/1.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 22.78481012658228%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA4klEQVQY03WQQWrDMBBFdYDsCoWsu+olcqHeKKsUijcly0Ch61wiiU1je1EQxpZtSZYt6YeZYEOhGfjMCDFv/oyIMeJRjOOIuq4hpcQ0TX/+5i5pPb6KHmfl+C26rgNBZ4UQ4L1nmLWWszGGNQzDImMHRNvj7fgLsT3hOcmwOZQQTdPAOccNBKDcti07I5hSClVV8RCqyUDX93BGI5UNVu8XPH2kWCcZg4XWenFAQNI8gNYsigJ5nrN7ckZgH8J9kxCxOym8fP7gdX/Fd6khqPG/IADBlxWNwaN7Kxegp8A3vAGCbXlm9UeBFwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="1"
+        title="1"
+        src="/static/9dff634260864f970e80cdc21b7ba7ba/330eb/1.png"
+        srcset="/static/9dff634260864f970e80cdc21b7ba7ba/c26ae/1.png 158w,
+/static/9dff634260864f970e80cdc21b7ba7ba/6bdcf/1.png 315w,
+/static/9dff634260864f970e80cdc21b7ba7ba/330eb/1.png 435w"
+        sizes="(max-width: 435px) 100vw, 435px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>是一个交互式的 https 代理，顾名思义，它是用户与网络之间的中间人。它可以帮助我们很好地管理 http 请求，包括测试，更改，拦截等等操作。</p>
+<p>目前，mitmproxy 主要可用于三种形式：</p>
+<ul>
+<li>命令行：包含 mitmproxy 的所有操作</li>
+<li>用户界面：也叫 mitmweb，界面设计很像 chrome 开发者工具中的 network 界面，但在功能方面是 mitmdump 的阉割版</li>
+<li>Python API: 也叫 mitmdump, <code class="language-text">from mitmproxy import http</code> 可作为模块引入 python 代码，在代码中实现 http 请求</li>
+</ul>
+<h2>为什么要用 mitmproxy</h2>
+<p>总的来说，是为了保障前后端的分离开发。具体表现有：</p>
+<ol>
+<li>后端 API 还未完善，前端为了不影响涉及 http 请求的开发，需要 mock 数据。</li>
+<li>前端在测试环境下开发，测试环境中的数据和线上环境有偏差，也可能需要 mock 数据。</li>
+</ol>
+<h2>安装</h2>
+<p>MacOS:</p>
+<p>a. 使用 Homebrew: <code class="language-text">brew install mitmproxy</code></p>
+<p>b. 使用 pipx: <code class="language-text">pipx install mitmproxy</code></p>
+<h2>基本操作（命令行）</h2>
+<h3>启动</h3>
+<p>安装成功后，在终端中直接输入 mitmproxy 即可开启 mitmproxy 的命令行版本。开启后界面如下：</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 435px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/0c2b9ea2b3e976c7e0cf786e2b33fd79/330eb/2.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 62.0253164556962%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAhklEQVQoz+3SQQoDIQwFUO9/BZVWabdFEdyol/Ayaiz+4sAMU7orLrpo4BESkqzC7OOOy+0KpdRBCLGRUoJz/pb3/rTPa6232nsPRv0JaoTW2oGoo/cOIvrIZ+edac4wLA42xsBK/4O/eHD529RaUUpZYj43CyEgxghrLYwxX3HOIaWEnDNeaGyQGYjl4DEAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="2"
+        title="2"
+        src="/static/0c2b9ea2b3e976c7e0cf786e2b33fd79/330eb/2.png"
+        srcset="/static/0c2b9ea2b3e976c7e0cf786e2b33fd79/c26ae/2.png 158w,
+/static/0c2b9ea2b3e976c7e0cf786e2b33fd79/6bdcf/2.png 315w,
+/static/0c2b9ea2b3e976c7e0cf786e2b33fd79/330eb/2.png 435w"
+        sizes="(max-width: 435px) 100vw, 435px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>注意到右下方，表示默认代理的是 8080 端口，也就是说经过 8080 端口发送的 http 请求，都会被 mitmproxy 给记录下来。</p>
+<h3>设置代理端口</h3>
+<p>在 macOS 中：设置->网络->高级->代理
+将网页代理（HTTP）和安全网页代理（HTTPS）的端口改为 8080</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 435px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/7eb86cc98e39b59582b3bb0f9eac565e/330eb/3.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 82.27848101265823%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsTAAALEwEAmpwYAAACVElEQVQ4y3VUi1LiQBDM///C/cN9hCccJxAQ8FAS8tzs5qnBR6m82uqRxVhXl6qumcxOentmZ+P4aw+e7yFJEiilkGWZ+HEcC+hHUSSgnyYpVJIhTVMB87XWMMZIvhOoAovQIIkjVHWNoihQVRWKshT7hRJVWSEvDaLcg84zlGWFpqllvWkaIXayTEETWgviOIHJc1FEBVQlKuNIlC38KX6Of8Bd/kEUxqJQpZ+VpUqRMMPd3R0GgwEWNzcYuxP0fw8kRkKWMZvNcHV1JTlhECJTWki4HkQBgngteXx3VJpK/ZQ/nU5xfX2Nt7c3vL+/Y7fb4enpCb7vYz6fi3pWUZSFlMhvJn/HcJdDhHEomzg600hUiMVqistfl+j1egjDEGVZ4v7+XizfqY5rw+EQq9VKiKXcTCFRn20RhUYbKJMg0j7ms7kkkYjKjsej2CiKpaee56FtW7y8vEj8+flZ/E27+SLU2sAUGkWj4a08Iew+r6+v57EhoZRcFDIF5WkS+N4h1BJ8eHiQD1jedrvF4XDAfr8/Kfwk5Np6vZae0gZBgCAIJf5VsjEy0K7rSo8uLi7kcG5vb8/DbIfckhL0JX5aPxPmeS4BNnsymciI0HIDKrEfE1ZNV60gCP4tmSPCUbGl8kBYOn3GbJxgLmHHi322V9ax9/Dx8VH6RbvZbNC2GzlRexXtAXACuN4F89i21BLyJT5dse7PgCX3+32MRiNpCe1yuTyX3O3ptx5y57quv8H+FKiIt8KCa1RLn0Q2l5Zcjj3J/8GecPd31q3E+lTHDT4AcwKWGLA7g4cAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="3"
+        title="3"
+        src="/static/7eb86cc98e39b59582b3bb0f9eac565e/330eb/3.png"
+        srcset="/static/7eb86cc98e39b59582b3bb0f9eac565e/c26ae/3.png 158w,
+/static/7eb86cc98e39b59582b3bb0f9eac565e/6bdcf/3.png 315w,
+/static/7eb86cc98e39b59582b3bb0f9eac565e/330eb/3.png 435w"
+        sizes="(max-width: 435px) 100vw, 435px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>这样一来，用户通过网络发送的请求默认都会走 8080 端口，也就是说都能被 mitmproxy 监听到。</p>
+<h3>HTTPS 证书设置</h3>
+<p>当 8080 端口 设置成功后，访问 https 开头的网页会遭到拒绝，这是因为代理不受信任。我们需要给他一个证书：</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">cat ~/.mitmproxy/mitmproxy-ca-cert.cer
+cp ~/.mitmproxy/mitmproxy-ca-cert.cer ~/Desktop</code></pre></div>
+<p>这样一来新的证书已经在桌面上生成：
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/8e5ae0964d9fcaa8c43f0f937fb68bbc/6af66/19.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 47.46835443037975%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB10lEQVQoz52STWsTURSG57+4KgUXBd3YVREEsehCwY0BBS2CUnQhSI24EL/ioq50WxUtuKgmKNgg1iZpwiQmmSQSktFkJpNkZjIzGbSJdSOP3AkprXbl4oFzz7n3PV9X0kybaqtLvW2jlEoUi0VUVQ1oNBq0Wi00TaNWq1GpVIK4oigoSgm3Z/E6nuLu4iKlz2vMhSNIX5omVa1DoV5lLbFBJp0ml8uRTCZJpVJkMpnAFkLlcplsNhvEZTmLrjV4+3GD8J2HvI8usXD/AZLRtalrBrVv9SCreDR+mM/nA2RZDio1TZNOp0O73UbXdTzXYfVTmpuRxyy9eMW9Jy+RPM/F9zz8vo/v9+n3R/i+v8v2PG8XjuuyNRwQjSc4fO4GoeuPmJ2PIDmOw/9g2z2Ggx/E4utMnbzC9NlbzJy/jeS67valv+3xeadf0HN6mJbFYPM70dV1Dpy6ynQozKEzC6MKt9vYQ8iyLAqFQjC3ZrPJYLDJz+EWv39Bx1d5Hlth6sQ8B09fC5CEkPgihmH8I7pTXMxRLMSxXSp6lljhKR9qyzx7s8LEkQvsP36ZydlLo5aFmNjgXi2PfSKZqNbpuTS7Kjk1wVdLYTn6jn0zISaOzjF57CJ/AO4yaEYZiEFvAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="19"
+        title="19"
+        src="/static/8e5ae0964d9fcaa8c43f0f937fb68bbc/f058b/19.png"
+        srcset="/static/8e5ae0964d9fcaa8c43f0f937fb68bbc/c26ae/19.png 158w,
+/static/8e5ae0964d9fcaa8c43f0f937fb68bbc/6bdcf/19.png 315w,
+/static/8e5ae0964d9fcaa8c43f0f937fb68bbc/f058b/19.png 630w,
+/static/8e5ae0964d9fcaa8c43f0f937fb68bbc/6af66/19.png 640w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+添加后还需要设置为 始终信任：
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 511px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/ae9edf5ee9bb1dacd2041da182ccdb38/92e00/20.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 79.74683544303798%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsTAAALEwEAmpwYAAACA0lEQVQ4y5VTa4+aUBDl//+VJv3QbJo+TJs2psEty2pBAQnIQx4CC1F5+YDTzDUYdXVrJxluuPdyOHPmDBc99jGc9vBkTuA5cziuA9d1YZomy8lkAkEQIIoidF0/7t9Krsg0LGMZm5UJ17EwHo8x1TTUdQ2Ktm3P1su9/X6PpmmOK5faIjxbQ+J+h66NIYjPUBQFnu+jLEus12skSYIsyxDHMdI0RVEUbJ/OL4N7sceYKz8RmT0UMwNLeYTathDwPBxFg+cFCL3wDLCqKgZIwB3TLrnNZgPf97HbgdFumwZJFkGZSXieCBDV35iFOqq6wrW4lII7PZzP54jCGH9mInrTD/ihfsZH7R0+qe+xSEKgPWdzqS8DpIdt2zAMgzGlDPwAxtQE/2uAhRdBMh+xLLNXjK41iTEkXcgWsixDkiTo+hSOY0N4ErBartE3HpAWizO93gQkgTVNY91VVZX5MAgCjEYjVEUNwfmGrIzvA+xettstHMc5Anqeh+FoiDKvMLC+Ii2j+0s+vUTMaDpIS0mWUBY1BtYXpMV/AHYMyWeWZbFSieVweGDYNx/wkoevPHctORoX8iKtZN4oiliTugnZbneIcx+b/cGHLVq8FRy5PgwPk7BarW4btwWatvk3w+5DKo/necaOfnA6VvcAHQE7BnmeM3NTyaQjlXyrCbeCAP8CNxbGtDV0l8UAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="20"
+        title="20"
+        src="/static/ae9edf5ee9bb1dacd2041da182ccdb38/92e00/20.png"
+        srcset="/static/ae9edf5ee9bb1dacd2041da182ccdb38/c26ae/20.png 158w,
+/static/ae9edf5ee9bb1dacd2041da182ccdb38/6bdcf/20.png 315w,
+/static/ae9edf5ee9bb1dacd2041da182ccdb38/92e00/20.png 511w"
+        sizes="(max-width: 511px) 100vw, 511px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 505px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/b466b4daea8a9a68e1ecfc445fa5ee05/c0cb9/21.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 17.088607594936708%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAkUlEQVQI142MXQrDIACDvf9hdo9RC4O9WLtNkKLS1p+CY9RWMxBa2NsCISGQj8T5Djs+8Fk6DPIF2ragtIH3Hv+qlHJ2MvdXDE8GzS/oe4aGtugYA+ccxhhorSGEgFIKUspqay2cczVzzj9Q8nYKwXAs6oYxJviwIMaIEAKmaTrP27YhpYR1XStk3/e6HaAD+AWd5+REsqQrmAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="21"
+        title="21"
+        src="/static/b466b4daea8a9a68e1ecfc445fa5ee05/c0cb9/21.png"
+        srcset="/static/b466b4daea8a9a68e1ecfc445fa5ee05/c26ae/21.png 158w,
+/static/b466b4daea8a9a68e1ecfc445fa5ee05/6bdcf/21.png 315w,
+/static/b466b4daea8a9a68e1ecfc445fa5ee05/c0cb9/21.png 505w"
+        sizes="(max-width: 505px) 100vw, 505px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+这样一来，就可以访问 https 网页， 监听 https 请求了。</p>
+<h3>链接项目</h3>
+<p>现在，假设我们的项目在 localhost:3000 中运行，我们希望 mitmproxy 只监听这个项目的 http requst，那么我们可以这么做：</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">mitmproxy --mode reverse:http://localhost:3000/ -p 8080 --set keep_host_header=true</code></pre></div>
+<p>然后打开 localhost:8080 现在在 localhost:3000 的项目已经被反向绑定，我们现在可以只监听项目中的 http request 了。这也是 mitmproxy 用于开发的核心步骤。此时，可以通过它去拦截/修改/重做项目中的 http 请求了。但需要注意的是，如果此时电脑中的 http 和 https 代理也设置在 8080，将无法访问任何网页（除了 3000 的绑定页）。</p>
+<h3>Python 脚本嵌入</h3>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">http-reply-from-proxy.py
+
+GET_Dictionary = {
+  xxx : xxx,
+  xxx : xxx,
+}
+
+def request(flow: http.HTTPFlow) -> None:
+    os_path = os.path.split(os.path.realpath(__file__))[0]
+    baseURL = "http://localhost:8080/&lt;api prefix>"
+    for key in GET_Dictionary:
+        if flow.request.pretty_url == baseURL + key:
+            f = open(os_path + GET_Dictionary[key])
+            data = json.dumps(json.load(f))
+            flow.response = http.HTTPResponse.make(
+                200,
+                data,
+            )
+            f.close()</code></pre></div>
+<p>在开启 mitmproxy 时，带上后缀 -s http-reply-from-proxy.py, 即可使脚本生效。这个脚本的目的是 match 特定的 http 请求，并将它的 response status 改为 200，response body 改为 data。 详见: <a href="https://docs.mitmproxy.org/stable/addons-examples/">https://docs.mitmproxy.org/stable/addons-examples/</a></p>
+<h3>监听请求</h3>
+<p>例如，我们新开一个终端，在里面通过 8080 端口发送两个 GET 天气预报的请求：</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">curl --proxy http://127.0.0.1:8080 "http://wttr.in/Beijing?0"
+curl --proxy http://127.0.0.1:8080 "http://wttr.in/Shanghai?0"</code></pre></div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 435px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/e55282caf2f1cd0a22d9f52205e47cde/330eb/4.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 42.405063291139236%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA4ElEQVQoz52R226DMBBE+f8PbBr1oVwTMMY2LY3ANj6VTYpQ38JKo73M7mrHzuZ5xtqFx2NKXimN1oazlm3OAg8g8G1qtLggpcQ5RwiBdV13f8T/WswPCydg5XYvKYor4/h17sI8zxGy5WeeaLuOuqq5vL0zDANaa5RS9H2PMYamaRBCJO7Ix3rbtqkvq6qKYVBJ4tasycuKcRxZlgVr7Y6Ye+9T7CKc2+t/3FNylLekSPcl4vNKWZR0ontd8vawBu8dznmUrOnqj3RptMi/giyEOPT8Ke/p5UBzuyfyzMJflElwaJWRegwAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="4"
+        title="4"
+        src="/static/e55282caf2f1cd0a22d9f52205e47cde/330eb/4.png"
+        srcset="/static/e55282caf2f1cd0a22d9f52205e47cde/c26ae/4.png 158w,
+/static/e55282caf2f1cd0a22d9f52205e47cde/6bdcf/4.png 315w,
+/static/e55282caf2f1cd0a22d9f52205e47cde/330eb/4.png 435w"
+        sizes="(max-width: 435px) 100vw, 435px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>我们成功获取到了北京和上海当前的天气。这时我们返回 mitmproxy，可以看到：</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 435px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/47f3b7265e3df9b476d41cd9f5e16f2d/330eb/5.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 58.22784810126582%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAvElEQVQoz+2SywqCQBhG5/1XXqiZCXQhuHDlI/gOvkNE0s3GnLD0RHajRZBRuz448PPBd1a/UJMRjuvg+36P53m4vovrOcjxCKU1SimklCgpkf2trvel01r3uyzLEM2xoqwKdnWJtRa7q5k2C0o7g8OKoRHNYc/GFGzNGmMqzNYw2y8p6zltXdC27SDEzdx13R0e5VP/DqL7YPQX/lg49C1ecRfy5YgkSYiiiCAICMNwMOddHMekaUqe55wA5aiKL/azfEIAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="5"
+        title="5"
+        src="/static/47f3b7265e3df9b476d41cd9f5e16f2d/330eb/5.png"
+        srcset="/static/47f3b7265e3df9b476d41cd9f5e16f2d/c26ae/5.png 158w,
+/static/47f3b7265e3df9b476d41cd9f5e16f2d/6bdcf/5.png 315w,
+/static/47f3b7265e3df9b476d41cd9f5e16f2d/330eb/5.png 435w"
+        sizes="(max-width: 435px) 100vw, 435px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>已经成功监听到了这两个请求。</p>
+<h3>查看请求详情</h3>
+<p>注意到<code class="language-text">>></code>所指向的就是目前 focus 的请求，可以按 ⬆️ ⬇️ 键来切换 focus 的请求。按 Enter 键查看请求详情（有 Request ｜ Response ｜ Detail 三个模块，按 ⬅️ ➡️ 键进行切换）。</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 435px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/1a6801b24f521bc30f5d37854bbef877/330eb/6.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 58.22784810126582%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAABSElEQVQoz62T3WrCQBBG8/4vIUmju42JJtG0FUGh2lITNSbYKhXpz70XXoRSITkl2yIWSivFDw4zsDvfDLuM1nRdfN/HNE103cAUFcyqQU2YSCmQUiJqgjNRxbIlbqNOs9nE8zxc11WU9bZtE0UR2nBwTRSGJElCGEUMbwaE41v8C4u6LWm1Wly2A8zAouZWuOu36Pf7BEFAt9ul1+vR6Vype3Eco4XJkvlyxevLM6vHRyaTCYvFkiRJGUdjZrMZaZoyi2PG0YT5/YNqXk4znU7VeVkzGo1Yr9doT5ucTZaTvee8ve/YbrdkWcZut+MnFUXBb9LOHQ9dOBiygbSc/btZloXjOH9j2zheGz+4JE0SNCg7HvJ9mmP5qkAr8z0HJv9R8WlYcEpOb5jnOadCGXJiaeXXV9Xa6Ri6ruKxGIahohBCrWK5KR+smmS8/YCAAQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="6"
+        title="6"
+        src="/static/1a6801b24f521bc30f5d37854bbef877/330eb/6.png"
+        srcset="/static/1a6801b24f521bc30f5d37854bbef877/c26ae/6.png 158w,
+/static/1a6801b24f521bc30f5d37854bbef877/6bdcf/6.png 315w,
+/static/1a6801b24f521bc30f5d37854bbef877/330eb/6.png 435w"
+        sizes="(max-width: 435px) 100vw, 435px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 435px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/2f3708311bcc29489f1cb4db0f33780f/330eb/7.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 57.59493670886076%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAAB7ElEQVQoz4VTiW7aQBD1//9CD+IrYGxcihEIWkKriEAsLpNAhPgBDnMYbOMD86rZypJpq3Slp5l9s3pz2MOVy2UYhgFZliEIAqR8DqIkgBfuIIoiA8/z+MTnIN4LKBZkqKqKUqnEoGkadF2HoijodDrgSroOw6ii0WiiVqvhS1lHq93A49N3tB6+odvtYmD20Xxuo/FYxXTwE+32A6rVKprNJlqtFur1OiqVCgaDAbgfT31Y4xFeJhaGwyHMZxOz2Rvm8znzLcvCdDrF68srJtaExUzTRK/XY+/H4zH6/T67LxYLcO4VOCVAgr/P+XxGFEW4XC4Iw5D5URjivcPNlhHeljGWTgzHj+F4v63r+dhutzgej0w4jmMmSDb1s6CExHM5MY/PYgG8rOAjn8eHu3vkZBVKUUVJ09jQU9DHuAHxahFa2cBXo4bRaAjO91x47gm+7yGOQsRRgHQAlDVt9Xq9/rNF4rPgNrbNWiOcgwBBEDARanOz2cBxHPi+z3hqKTtPskmS3AhzJLTb7bDf79m8bNuGvbXZ3XVdxlGc+MPhgNPpxBKRpSQkeFPher3GarVijzzPYyIkRqAYCVKVFE8rpgRkSSwLJkgtvDefP2f1v8PR6hUKBbZ6kiTdgLiUz/pZ0GrS2tGm0I/+CydLWipj7SP/AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="7"
+        title="7"
+        src="/static/2f3708311bcc29489f1cb4db0f33780f/330eb/7.png"
+        srcset="/static/2f3708311bcc29489f1cb4db0f33780f/c26ae/7.png 158w,
+/static/2f3708311bcc29489f1cb4db0f33780f/6bdcf/7.png 315w,
+/static/2f3708311bcc29489f1cb4db0f33780f/330eb/7.png 435w"
+        sizes="(max-width: 435px) 100vw, 435px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 435px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/51f0a934991e0a5cf7bc37a66f07b4f5/330eb/8.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 58.22784810126582%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAAB90lEQVQoz5WTi2oaQRSG9/1foqCru91otN4ooS0lJGpq1AYlxBBCTdPGeFt3Xd37fGXG2pZSAz3wcYa5/PNzzoxWqVSp1esYhkEul8OwMuTzOnlDxzQNTNPEyBtkDR2rYFIqWhQKBY6PjykWi7/GlmXRbDbRKm/KNOp1Tk5OaDQaVCpl3n14S7VxxFHxNdVqlUatjl63yJVfcfGxxtXVZ1rtNv1+n+FwSKfTodVqMRqN0N6ftjltfqLX66qFZrNFr9fnsnPJ2dk53W5XHexedrloXzAYDLm9vVVCNzc33N3dcX19zWAwYDweoz0HMAnAjmHDLgLfJ45jhBD8b2izdczEiVh6MUGUEAQBnufh+z5hGLLdbomjiDRNSZJE5UOINEX77qRM1gIvhCiKcZ0Vm81WOYyiSF0gN/8d0v2/0CZuyvNa8M0RTD3BowO2D2ECnrdmtVrhuq7Ctm2FvOiQqHa/hIeVYGwLvtiCmScI413t5OHpdMpyuVTj+XyukKU4KPjoCJ7cHdLh15V0KViH4DgOi8VCZcle+EXBsZ3yYKeMlwn3i4QnJyGKE5I0VQJ7h5LZbKaQDds36c9GiVSgPfswk88mAjeBp+3vwstabTYb5UgihWSTXnw2pVIZwzDJZLPouk4mq6u8J/tz/hByXX67Wq2mPsEPA3Fs9CHfPTQAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="8"
+        title="8"
+        src="/static/51f0a934991e0a5cf7bc37a66f07b4f5/330eb/8.png"
+        srcset="/static/51f0a934991e0a5cf7bc37a66f07b4f5/c26ae/8.png 158w,
+/static/51f0a934991e0a5cf7bc37a66f07b4f5/6bdcf/8.png 315w,
+/static/51f0a934991e0a5cf7bc37a66f07b4f5/330eb/8.png 435w"
+        sizes="(max-width: 435px) 100vw, 435px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>按 <code class="language-text">Q</code> 可以退出详情页。</p>
+<h3>查看快捷键</h3>
+<p>输入<code class="language-text">?</code>键，即可查看所有内置的快捷键：</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 435px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/e987c98711af925fa73e1d3982fb073b/330eb/9.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 57.59493670886076%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAABe0lEQVQoz6WSzaraQBiGc3GuXaipy7a2tVhsi1fhTfgDCurC5fEyDljo4ojGxSk2+BNjoomamclTZg4KhS5O6MAD88Hw8L4zY72rfOTt+w98+vyFr9++02g0qNfrVCoVQ7VapVarkc/nDcVikVKpxBvbplwuY9s2hUKBXC5Hs9nEelr+4vGnw4/ZM0/OM677m81mw2q1Mriuy3q9Zj6fGxzHMSyXyzuLxYLZbGbOWgBhGBDHEVEUoZTif5YVXxJ22y2n04nz+cz1ejVIKY08K1aSJByPR5SUCCHQs0iSv5KmafpqLC9KWQcJh0gQnBV+JAmiBCkSk1RJlUlqpUqy3e7YeR6HwwHP87hcLve0t6SvFpIqI9KEYYjv++YKTHUhMtW9C/e+b2Sam1wLdeXMQiWFSRUEAfv93nB7bV09y2u/JATiOL5/Fy3TSx/QlTP/w8nDA91ul3a7Ta/XM/tWq2XmTqdDv99nNBoxHA7/yWAwYDweM5lMmE6n/AF27nL5DVNqtwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="9"
+        title="9"
+        src="/static/e987c98711af925fa73e1d3982fb073b/330eb/9.png"
+        srcset="/static/e987c98711af925fa73e1d3982fb073b/c26ae/9.png 158w,
+/static/e987c98711af925fa73e1d3982fb073b/6bdcf/9.png 315w,
+/static/e987c98711af925fa73e1d3982fb073b/330eb/9.png 435w"
+        sizes="(max-width: 435px) 100vw, 435px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 435px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/208205b30f885cf3b5240ea25528eaac/330eb/10.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 57.59493670886076%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVQoz52Sy6oaQRCG5wE1RhRx5cbLQp/GVRYeMagkCGdl3uIszFEUTIiYGQ0JGZ2LOtfY/YVuwSRkYUzDT3XR8HX9VWXkcjle5l6Qz+cpFouUSiUKhQLZbFYrk8nQaDSoVqtUKhXq9TrNZlOr1WrpWKvVKJfLtNttjKfpkqfpB5bLjzw/v2c+n7NYLLRmsxnT6RTTNFmv16w+rXS0LEtru93qXL1vNht2ux2G/wOsEyRAFAaEUUSapvzvMeyTwHQEcSrwPA/HcfB9n+PxSBiGCCEQUlziDUkpFFBiuhIvkvieh+u6GhZFkQYGQUCSJPp3KeVNGbtAYnmSMJW4rqMrVKB7IH8Av/iS1V5yiCWe6/DdtrV127Y5n893Q41vR8lnVyLEL8txHF91N9ANJUF6SdQwlJTtw+Fw7Z9qgerpPwH9SLA/CfzwjO972u5+v7/C1QqpCSr7t6esKkzga3jZoSSOr9X8Ppi79vDN4zte9d7SfT3g4aFDp9Oh2+3q2Ov1rvd+v89wOPxLg8GA0WjEeDxmMpnwE5Qjbn0N1ktzAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="10"
+        title="10"
+        src="/static/208205b30f885cf3b5240ea25528eaac/330eb/10.png"
+        srcset="/static/208205b30f885cf3b5240ea25528eaac/c26ae/10.png 158w,
+/static/208205b30f885cf3b5240ea25528eaac/6bdcf/10.png 315w,
+/static/208205b30f885cf3b5240ea25528eaac/330eb/10.png 435w"
+        sizes="(max-width: 435px) 100vw, 435px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h3>拦截请求</h3>
+<p>首先按 <code class="language-text">i</code>，进入命令编辑模式并且自动写好了 <code class="language-text">set intercept ''</code></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 435px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/98904ed9d8e833430ab7baa18e3be2e6/330eb/11.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 6.329113924050632%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAABCAYAAADeko4lAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMklEQVQI143D0QkAIAhAwfZfR7B+1DDCDVzntUIHNyIvOw9rTVQVEcHdMbPvEUFV0d08HA9AhZ6c7bAAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="11"
+        title="11"
+        src="/static/98904ed9d8e833430ab7baa18e3be2e6/330eb/11.png"
+        srcset="/static/98904ed9d8e833430ab7baa18e3be2e6/c26ae/11.png 158w,
+/static/98904ed9d8e833430ab7baa18e3be2e6/6bdcf/11.png 315w,
+/static/98904ed9d8e833430ab7baa18e3be2e6/330eb/11.png 435w"
+        sizes="(max-width: 435px) 100vw, 435px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>在中间加上所需的 filter expressions, 例如： <code class="language-text">~u &lt;regex> &amp; ~q</code>
+<code class="language-text">~u &lt;regex></code>表示只拦截和<code class="language-text">&lt;regex></code>匹配的 url
+<code class="language-text">~q</code> 表示只拦截 request，不拦截 response （具体查看快捷键中的 filter expression）</p>
+<p>假设我们想要拦截出现了/Beijing 的 url：<code class="language-text">~u /Beijing &amp; ~q</code>，回车：</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 435px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/5e17d424813f7a3df12adeadbd76bcd5/330eb/12.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 5.69620253164557%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAABCAYAAADeko4lAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAO0lEQVQI13XJyw2AQAhAQfsvBQy6GH5VbEnPWICHOc2RmXQX57W410NXMTNEBO6OiKCqv743M7qbvTcvsbk9flMfeuwAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="12"
+        title="12"
+        src="/static/5e17d424813f7a3df12adeadbd76bcd5/330eb/12.png"
+        srcset="/static/5e17d424813f7a3df12adeadbd76bcd5/c26ae/12.png 158w,
+/static/5e17d424813f7a3df12adeadbd76bcd5/6bdcf/12.png 315w,
+/static/5e17d424813f7a3df12adeadbd76bcd5/330eb/12.png 435w"
+        sizes="(max-width: 435px) 100vw, 435px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>可以看到拦截已经被设置成功。
+这时，我们再试着在另一个终端发一遍请求：</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">curl --proxy http://127.0.0.1:8080 "http://wttr.in/Beijing?0"</code></pre></div>
+<p>你会发现并没有得到北京的天气预报，这是因为这个请求被 mitmproxy 拦截了（在 mitmproxy 中显示红色）：</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 435px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/34c717e92a55c85ce62c5f7125c83110/330eb/13.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 58.22784810126582%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAo0lEQVQoz+2TwQqCQBRF5/83aRZSzUxKsxgTxF/wF/yb1HknzIIWBRYuWnTh8ODyuKt7lT3uMPEKu02wmwS7jrBxNHmHPdZajDForW/3FeNPmqY0TYOCHoYeJEAYYOigu0x8ISUCAQhyhyeCEEKYjYiMgcKS/AN/MfCTWsyqDQtLee/JT47cec5FQV3XlGVJ4T1ZlmG0eTu5xySdc1RVRdu2XAFCYI3G9QtdrwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="13"
+        title="13"
+        src="/static/34c717e92a55c85ce62c5f7125c83110/330eb/13.png"
+        srcset="/static/34c717e92a55c85ce62c5f7125c83110/c26ae/13.png 158w,
+/static/34c717e92a55c85ce62c5f7125c83110/6bdcf/13.png 315w,
+/static/34c717e92a55c85ce62c5f7125c83110/330eb/13.png 435w"
+        sizes="(max-width: 435px) 100vw, 435px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>如果想要取消拦截，只需要在<code class="language-text">>></code>对应的情况下按下 <code class="language-text">a</code>:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 435px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/7fcadf7adb7cceac1cbe893450516468/330eb/14.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 8.227848101265824%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAAAsTAAALEwEAmpwYAAAASUlEQVQI15WHQQqAMAzA9v/j2npYvyiDKSjbihF9gQZCSBIR1BRVxcx4XlTIObOY4e6UUt5+McV1cvRKRNBHJ8ZkZadFha3xlxu1c4aSBRBLsgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="14"
+        title="14"
+        src="/static/7fcadf7adb7cceac1cbe893450516468/330eb/14.png"
+        srcset="/static/7fcadf7adb7cceac1cbe893450516468/c26ae/14.png 158w,
+/static/7fcadf7adb7cceac1cbe893450516468/6bdcf/14.png 315w,
+/static/7fcadf7adb7cceac1cbe893450516468/330eb/14.png 435w"
+        sizes="(max-width: 435px) 100vw, 435px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>可以看到请求成功了。</p>
+<h3>编辑请求</h3>
+<p>让我们回到刚刚拦截状态下的请求：
+首先回车进详情页面，再按 <code class="language-text">e</code>，会让你选择修改哪个 part:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 170px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/f99c11a1bbf3328ea82add2f597ba882/04472/15.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 142.40506329113924%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAcCAYAAABh2p9gAAAACXBIWXMAAAsTAAALEwEAmpwYAAADn0lEQVRIx5VWyW7jRhDl13oBLDljjUde4EP+JbkGOQaIj/b4ECDJaOyRqNV2JGolxX0nX/CKbkH2bJ4GCuymul+/qnpVlHb78QNGwwH6/T4GgwGGw6FYr9fDcrlEu93G5eUlrq6u0Om04Xme7ON+ZVx3Oh3c3d1B++W3P7Dz0xneHB7g4KCGvb09sZ2dHezu7sq8Xq+jXq/h8PBQrNFo4OjoSIxz2vHxMa6vr6H9+vuf2Hv7M969fYOjRgO1Wg37+/sCwsNcN981cXFxgfPzc5ycnIidnZ3Jms9ms4nT01Pc3NxA+9AzMLFzFFki7qxWK9i2Le7SLNPCdDrdWJqm8t40TUwmE/i+D448z6HrOrRPQwNmUCLPEgRBIBtc18V6vZYLaFzzEj7jOEaSJLLPcRxZc2RZBr3TgfZPb4rRKkOWhFgslsKCLAk4mRgwDAPz+VwYlWUp7GazGcbjsQBy8D0Bu90uNH1kYB2WyFIyDIWJYkfGNLLggaIoxLhW7wimGDLTWmsww9jOkcUhlsuVsCEggV8ztgGF4d9dA3OvQJ7GsCxLXCMg53SdTNXBr9kzhh/7U8zdAlkaC6vFYiEBJyDjx0S8FlCy3OpPYTg5siSC7TgCRFAyjaLou2CfAVKHU7cUHQqgacJ1XGHGhPwIoLjcvZ9h7uZI4xCe52M+XwhDJofSUKDfG5uktIcG7KiUGAZhKNpyHUeSwZiGQSCb6T4FzXkYhhuBs0KeMXzfnkFf5MiTEJ7vCzuKm+KlMZb+1nsyf3h4kN8o8u1KEYZVDCvZ+EGwETZrmAliLGmsYWttbTRKMPHGdYUlTRi2R1MsvQJpEkm8VuZKWJENDxGAc7JUslKlpxoIWbKCJMsEXPm5APp+IGImoGmZm5rmRdJ5LEtcVtp8mZQnHVbdhklhsG3bESAermq6cpfuyUVPlcRRFF+QzV/6DIadIxHZeOISAVViGAJWjEoMmTIpBP5iLVM2qtuQ4XbQlbh5EePE31Qn4t6XgMLw03AGy8+QxpG4y5sJRpYKlOwYO3Zost7uNJ8xvB1UpZdLDKNNZ2bcFCNeoro2wb9Zev/2pvJNyZJYDjF2jl1VCtmobwmTpLp5BfKV5sBvysLLJCmMFw+q1v6tplqWhTypPz7pka53oN0NZ7BZPWUupbf94fnRUTG8bcEY/4fRaCRyeHx8lCfXr7X7+3v5p9FqtaCRavT00XlmSSKWqPn2+/jF+6T6jfX8P7CoI9bnMsh2AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="15"
+        title="15"
+        src="/static/f99c11a1bbf3328ea82add2f597ba882/04472/15.png"
+        srcset="/static/f99c11a1bbf3328ea82add2f597ba882/c26ae/15.png 158w,
+/static/f99c11a1bbf3328ea82add2f597ba882/04472/15.png 170w"
+        sizes="(max-width: 170px) 100vw, 170px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>可以看到从 request 到 response，一切的信息都可以被修改。
+例如目前是北京被拦截了，如果想要换成查询湖州的天气，选择 4）path:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 435px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/2fd607e1c291d7c3ebe4bda357c782e8/330eb/16.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 8.227848101265824%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAAAsTAAALEwEAmpwYAAAANUlEQVQI12Ooqqr6X19f/7+mpuZ/QUHB/8zMzP9ZWVkoGCSWkZFBFGYwNzf/b2Fh8R9GU4oBpNpOQEClw1UAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="16"
+        title="16"
+        src="/static/2fd607e1c291d7c3ebe4bda357c782e8/330eb/16.png"
+        srcset="/static/2fd607e1c291d7c3ebe4bda357c782e8/c26ae/16.png 158w,
+/static/2fd607e1c291d7c3ebe4bda357c782e8/6bdcf/16.png 315w,
+/static/2fd607e1c291d7c3ebe4bda357c782e8/330eb/16.png 435w"
+        sizes="(max-width: 435px) 100vw, 435px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>回车后，把 Beijing 修改为 HuZhou 然后按 esc 保存，按 q 退回到主页面：</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/6c1abdcc1e0c610db8573705cec02095/d2a60/17.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 5.69620253164557%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAABCAYAAADeko4lAAAACXBIWXMAAAsTAAALEwEAmpwYAAAANklEQVQI133KMQoAIAwDQP8/CiJVaHCLdOoLI/QBDrddy0yRVEQIgBwuHBO36ZZVOLpos+7PAy7pOmbVWbnWAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="17"
+        title="17"
+        src="/static/6c1abdcc1e0c610db8573705cec02095/f058b/17.png"
+        srcset="/static/6c1abdcc1e0c610db8573705cec02095/c26ae/17.png 158w,
+/static/6c1abdcc1e0c610db8573705cec02095/6bdcf/17.png 315w,
+/static/6c1abdcc1e0c610db8573705cec02095/f058b/17.png 630w,
+/static/6c1abdcc1e0c610db8573705cec02095/d2a60/17.png 807w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>可以看到被拦截的请求 path 已经发生了改变，此时我们再按 a，让请求进行完。</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/f6e014e73427019a3ef6c7a2886a6a93/00b70/18.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 21.51898734177215%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAmklEQVQY031OWw7DIAzr/U/YTdrW90QLogX6CFA8EWn7WyNZjhwncVGWN1RVjVFOaJoWfT/g8XzBWot1XRnOOeZlWRh5lrWvJ2vzPMMYgwJcFp427rQa8e4qKKXYpLXmhWwWQiDGgKsqgAQiBefy1x2bm6DFHW1d4yBCCAHe+x+f54mU0l9wwmOPMLPHvkVIKdEPHYjob4qrgx+PdDZq5UEPMAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="18"
+        title="18"
+        src="/static/f6e014e73427019a3ef6c7a2886a6a93/f058b/18.png"
+        srcset="/static/f6e014e73427019a3ef6c7a2886a6a93/c26ae/18.png 158w,
+/static/f6e014e73427019a3ef6c7a2886a6a93/6bdcf/18.png 315w,
+/static/f6e014e73427019a3ef6c7a2886a6a93/f058b/18.png 630w,
+/static/f6e014e73427019a3ef6c7a2886a6a93/00b70/18.png 733w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>于是，原本请求得到北京的天气，就返回了湖州天气的结果。</p>
+<h2>Reference</h2>
+<ol>
+<li><a href="https://mitmproxy.org/">mitmproxy</a></li>
+<li><a href="https://earthly.dev/blog/mitmproxy/">How to Man in the Middle HTTPS Using mitmproxy, Adam Gordon Bell</a></li>
+</ol></section><hr/><footer><div class="bio"><div data-gatsby-image-wrapper="" style="width:50px;height:50px" class="gatsby-image-wrapper bio-avatar"><div aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear;background-color:#181818;width:50px;height:50px;position:relative"></div><picture><source type="image/avif" data-srcset="/static/f0a6665345107f1dbbb96bc9d3ffdf28/d4bf4/profile-pic.avif 50w,/static/f0a6665345107f1dbbb96bc9d3ffdf28/ee81f/profile-pic.avif 100w" sizes="50px"/><source type="image/webp" data-srcset="/static/f0a6665345107f1dbbb96bc9d3ffdf28/3faea/profile-pic.webp 50w,/static/f0a6665345107f1dbbb96bc9d3ffdf28/6a679/profile-pic.webp 100w" sizes="50px"/><img data-gatsby-image-ssr="" layout="fixed" data-main-image="" style="opacity:0" sizes="50px" decoding="async" loading="lazy" data-src="/static/f0a6665345107f1dbbb96bc9d3ffdf28/d24ee/profile-pic.jpg" data-srcset="/static/f0a6665345107f1dbbb96bc9d3ffdf28/d24ee/profile-pic.jpg 50w,/static/f0a6665345107f1dbbb96bc9d3ffdf28/64618/profile-pic.jpg 100w" alt="Profile picture"/></picture><noscript><picture><source type="image/avif" srcSet="/static/f0a6665345107f1dbbb96bc9d3ffdf28/d4bf4/profile-pic.avif 50w,/static/f0a6665345107f1dbbb96bc9d3ffdf28/ee81f/profile-pic.avif 100w" sizes="50px"/><source type="image/webp" srcSet="/static/f0a6665345107f1dbbb96bc9d3ffdf28/3faea/profile-pic.webp 50w,/static/f0a6665345107f1dbbb96bc9d3ffdf28/6a679/profile-pic.webp 100w" sizes="50px"/><img data-gatsby-image-ssr="" layout="fixed" data-main-image="" style="opacity:0" sizes="50px" decoding="async" loading="lazy" src="/static/f0a6665345107f1dbbb96bc9d3ffdf28/d24ee/profile-pic.jpg" srcSet="/static/f0a6665345107f1dbbb96bc9d3ffdf28/d24ee/profile-pic.jpg 50w,/static/f0a6665345107f1dbbb96bc9d3ffdf28/64618/profile-pic.jpg 100w" alt="Profile picture"/></picture></noscript><script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}</script></div><p>Written by <strong>Zeyu XIONG</strong><br/>MPhil student at The Hong Kong University of Science and Technology (Guangzhou)<!-- --> </p></div></footer></article><nav class="blog-post-nav"><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/Programming/tamper-monkey/">← <!-- -->tamperMonkey</a></li><li><a rel="next" href="/Programming/react-hooks-useContext-useReducer/">React Hooks: useContext + useReducer<!-- --> →</a></li></ul></nav><style data-emotion="css 5c2176">.css-5c2176{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none;appearance:none;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;position:relative;white-space:nowrap;vertical-align:middle;outline:2px solid transparent;outline-offset:2px;width:auto;}</style><button type="button" class="chakra-button css-5c2176"><style data-emotion="css 1wh2kri">.css-1wh2kri{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-align-self:center;-ms-flex-item-align:center;align-self:center;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-margin-end:0.5rem;margin-inline-end:0.5rem;}</style><span class="chakra-button__icon css-1wh2kri"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg></span>---</button></main><footer>© <!-- -->2023<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.com" style="color:blue">Gatsby</a><div style="border:1px solid;width:100%;display:inline;margin:0 0 0 8px;padding:1px 3px 1px 3px;font-size:10px;overflow:auto">---<!-- --> Views <!-- -->In This Site<!-- --> </div></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-200853852-1', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/Programming/mitmproxy/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-958b67dc2797f3960250.js"],"app":["/app-c6579f3240ed375c4253.js"],"component---src-pages-404-js":["/component---src-pages-404-js-bb1698d01a7f9dde5caa.js"],"component---src-pages-index-jsx":["/component---src-pages-index-jsx-22f69559945a494bcf58.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-981296d0df25e6d86be0.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-3f1083058762dd43df98.js"]};/*]]>*/</script><script src="/polyfill-958b67dc2797f3960250.js" nomodule=""></script><script src="/component---src-templates-blog-post-js-3f1083058762dd43df98.js" async=""></script><script src="/57dccc81d1607bd0d863a6a3853229f316346d50-8497c6899d22ce04787a.js" async=""></script><script src="/commons-998332ede0729171a8f8.js" async=""></script><script src="/5e2a4920-353357fa5f818914ce25.js" async=""></script><script src="/app-c6579f3240ed375c4253.js" async=""></script><script src="/ff239f9d-2dc0f60e2b21dca7b782.js" async=""></script><script src="/d91e9ae9-024a179e10d7143f23dc.js" async=""></script><script src="/3118b2d3-4a1809b502ab77e0a888.js" async=""></script><script src="/framework-e413e527015be9a1bdfd.js" async=""></script><script src="/webpack-runtime-3d9dfe9e59559d1a6b8b.js" async=""></script></body></html>
