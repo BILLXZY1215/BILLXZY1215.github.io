@@ -65,7 +65,7 @@ const About = () => {
 			icon: <FaResearchgate />,
 		},
 		{
-			url: 'scyzx2@gmail.com',
+			url: 'zxiong666@connect.hkust-gz.edu.cn',
 			name: 'Email',
 			cs: 'teal',
 			icon: <AiOutlineMail />,
@@ -111,9 +111,9 @@ const About = () => {
 				Intro
 			</Badge>
 			<Text fontSize='md'>
-				Hi, I'm Zeyu. you can call be Bill as well. I'm a seond year MPhil student
-				at The Hong Kong University of Science and Techology (Guangzhou). Before June 2022, I'm a full-stack
-				engineer in{' '}
+				Hi, I'm Zeyu. you can call be Bill as well. I'm a seond year MPhil
+				student at The Hong Kong University of Science and Techology
+				(Guangzhou). Before June 2022, I'm a full-stack engineer in{' '}
 				<a
 					href='https://ufair.net.cn/'
 					target='_blank'
@@ -237,17 +237,17 @@ const About = () => {
 			<Text fontSize='lg'>
 				As a Researcher, I'm interested in areas of{' '}
 				<strong>HCI (Human Computer Interaction)</strong> and{' '}
-				<strong>Software Engineering</strong>, especially
-				Assistive Techology, Ubiquitous Computing and Computer Music. If you have some projects related to these areas, please let me
-				know. Besides, I'm looking for an awesome Ph.D programs related to
-				those areas as well.
+				<strong>Software Engineering</strong>, especially Assistive Techology,
+				Ubiquitous Computing and Computer Music. If you have some projects
+				related to these areas, please let me know. Besides, I'm looking for an
+				awesome Ph.D programs related to those areas as well.
 			</Text>
 			<Badge fontSize='1em' pl={2} pr={2} mt={2}>
 				Project
 			</Badge>
 			<Text>
-				Undergraduate Final Year Project: AI Composer -- Image and Music Style Migration,
-				supervised by Prof.
+				Undergraduate Final Year Project: AI Composer -- Image and Music Style
+				Migration, supervised by Prof.
 				<OutboundLink
 					target='_blank'
 					href='https://www.nottingham.edu.cn/en/People/Profile.aspx?id=797da22d-f55c-4b24-8c81-4bcfa4ef12dc&language=en-GB'
