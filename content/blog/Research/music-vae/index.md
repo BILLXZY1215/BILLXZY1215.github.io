@@ -2,7 +2,7 @@
 title: "MusicVAE: Creating a palette for musical scores with Machine Learning"
 date: "2021-08-05"
 type: Research
-description: "Final Year Project 相关论文：Google AI 团队 音色合成工具"
+description: "Undergraduate Final Year Project 相关论文：Google AI 团队 音色合成工具"
 cover: "https://z3.ax1x.com/2021/08/05/fenSfg.png"
 ---
 

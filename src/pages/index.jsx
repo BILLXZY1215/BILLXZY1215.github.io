@@ -111,8 +111,8 @@ const About = () => {
 				Intro
 			</Badge>
 			<Text fontSize='md'>
-				Hi, I'm Zeyu. you can call be Bill as well. I'm a final year student
-				from Univeristy of Nottigham, Ningbo China, currently, I'm a full-stack
+				Hi, I'm Zeyu. you can call be Bill as well. I'm a seond year MPhil student
+				at The Hong Kong University of Science and Techology (Guangzhou). Before June 2022, I'm a full-stack
 				engineer in{' '}
 				<a
 					href='https://ufair.net.cn/'
@@ -237,17 +237,16 @@ const About = () => {
 			<Text fontSize='lg'>
 				As a Researcher, I'm interested in areas of{' '}
 				<strong>HCI (Human Computer Interaction)</strong> and{' '}
-				<strong>NLP (Natural Language Processing)</strong>, especially
-				human-vehicle interaction and symbolic music applied in computer
-				science. If you have some projects related to these areas, please let me
-				know. Besides, I'm looking for an awesome master project related to
+				<strong>Software Engineering</strong>, especially
+				Assistive Techology, Ubiquitous Computing and Computer Music. If you have some projects related to these areas, please let me
+				know. Besides, I'm looking for an awesome Ph.D programs related to
 				those areas as well.
 			</Text>
 			<Badge fontSize='1em' pl={2} pr={2} mt={2}>
 				Project
 			</Badge>
 			<Text>
-				Final Year Project: AI Composer -- Image and Music Style Migration,
+				Undergraduate Final Year Project: AI Composer -- Image and Music Style Migration,
 				supervised by Prof.
 				<OutboundLink
 					target='_blank'

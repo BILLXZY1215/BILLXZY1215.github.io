@@ -2,7 +2,7 @@
 title: 'AI Composer: Image to Music Style Migration (Result Display)'
 date: '2022-03-28'
 type: Research
-description: 'Final Year Project 结果展示'
+description: 'Undergraduate Final Year Project 结果展示'
 cover: 'https://z3.ax1x.com/2021/11/29/oMWHA0.jpg'
 ---
 

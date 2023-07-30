@@ -3,7 +3,7 @@ module.exports = {
     title: `Zeyu's Blog`,
     author: {
       name: `Zeyu XIONG`,
-      summary: `Final year student at the University of Nottingham Ningbo China, Computer Science with Artificial Intelligence.`,
+      summary: `MPhil student at The Hong Kong University of Science and Technology (Guangzhou)`,
     },
     description: `Coding & Life`,
     siteUrl: `https://billxzy1215.github.io/`,
